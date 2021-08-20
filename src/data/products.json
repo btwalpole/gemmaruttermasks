@@ -7,18 +7,21 @@
                 "id": "price_1JQVjeBn6ujpoUXKNmDd1v3y",
                 "title": "Afternoon Tea - Beige",
                 "image": "/images/afternoonTeaBeige.jpeg",
+                "color": "rgb(211, 196, 182)",
                 "price": 8.00
             },
             {
                 "id": "price_1JQVknBn6ujpoUXK2e4jkB5J",
                 "title": "Afternoon Tea - Blush",
                 "image": "/images/afternoonTeaBlush.jpeg",
+                "color": "rgb(185, 108, 122)",
                 "price": 8.00
             },
             {
                 "id": "price_1JQVkGBn6ujpoUXKBq7LglVU",
                 "title": "Afternoon Tea - Hot Pink",
                 "image": "/images/afternoonTeaHotPink.jpeg",
+                "color": "rgb(243, 58, 111)",
                 "price": 8.00
             }
         ]
@@ -31,6 +34,7 @@
                 "id": "price_1JQX0nBn6ujpoUXKL9DQksso",
                 "title": "Cherry Blossom Blush - Original",
                 "image": "/images/cherryBlossomBlushOriginal.jpeg",
+                "color": "rgb(185, 108, 122)",
                 "price": 8.00
             },
             {

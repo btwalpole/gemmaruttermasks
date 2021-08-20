@@ -1,8 +1,58 @@
+import Image from 'next/image'
+import {useState} from 'react'
+import styles from '@styles/Product.module.scss'
 import products from '@data/products.json'
 
 export default function Product({product}) {
+    let { variants, groupTitle } = product;
+    const [variant, setVariant] = useState(variants[0]);
+    console.log('current variant', variant)
+
+    function showVariant(id) {
+        let selectedVariant = variants.find(variant => variant.id === id);
+        console.log('trying to select id', id)
+        console.log(selectedVariant)
+        setVariant(selectedVariant);
+        //setActiveButton(selected.name);
+    };
+
     return (
-        <h2>Product title {product.groupTitle}</h2>
+        <div className={styles.container}>
+            <main className={styles.main}>
+                <div className={styles.productImage}>
+                    <Image src={variant.image} width="1024" height="768" alt={groupTitle} />
+                </div>
+                
+                <div>
+                <h1>{groupTitle}</h1>
+                    <div>
+                    {variants.map(mask => {
+                        const {id, color} = mask;
+                        return (
+                                <button 
+                                    className={styles.liningButton} 
+                                    key={id} 
+                                    style={{background: color}}
+                                    onClick={() => showVariant(id)}
+                                >
+                                </button>
+                            )
+                    })}
+                </div>
+                
+                <p className={styles.description}>£{variant.price.toFixed(2)}</p>
+                <p>
+                    <button className={styles.button}>
+                    Add To Cart
+                    </button>
+                </p>
+                </div>
+            </main>
+
+            <footer className={styles.footer}>
+                &copy; Gemma Rutter Masks, 2021
+            </footer>
+        </div>
     )
 }
 
