@@ -5,21 +5,21 @@
         "variants": [
             {
                 "id": "price_1JQVjeBn6ujpoUXKNmDd1v3y",
-                "title": "Afternoon Tea - Beige",
+                "name": "Afternoon Tea - Beige",
                 "image": "/images/afternoonTeaBeige.jpeg",
                 "color": "rgb(211, 196, 182)",
                 "price": 8.00
             },
             {
                 "id": "price_1JQVknBn6ujpoUXK2e4jkB5J",
-                "title": "Afternoon Tea - Blush",
+                "name": "Afternoon Tea - Blush",
                 "image": "/images/afternoonTeaBlush.jpeg",
                 "color": "rgb(185, 108, 122)",
                 "price": 8.00
             },
             {
                 "id": "price_1JQVkGBn6ujpoUXKBq7LglVU",
-                "title": "Afternoon Tea - Hot Pink",
+                "name": "Afternoon Tea - Hot Pink",
                 "image": "/images/afternoonTeaHotPink.jpeg",
                 "color": "rgb(243, 58, 111)",
                 "price": 8.00
@@ -32,14 +32,14 @@
         "variants": [
             {
                 "id": "price_1JQX0nBn6ujpoUXKL9DQksso",
-                "title": "Cherry Blossom Blush - Original",
+                "name": "Cherry Blossom Blush - Original",
                 "image": "/images/cherryBlossomBlushOriginal.jpeg",
                 "color": "rgb(185, 108, 122)",
                 "price": 8.00
             },
             {
                 "id": "price_1JQX19Bn6ujpoUXKZFne9UBy",
-                "title": "Cherry Blossom Blush - Maroon",
+                "name": "Cherry Blossom Blush - Maroon",
                 "image": "/images/cherryBlossomBlushMaroon.jpeg",
                 "price": 8.00
             }
@@ -51,7 +51,7 @@
         "variants": [
             {
                 "id": "price_1JQWzMBn6ujpoUXKK2YyM8Ok",
-                "title": "Calypso",
+                "name": "Calypso",
                 "image": "/images/calypso.jpeg",
                 "price": 8.00
             }    

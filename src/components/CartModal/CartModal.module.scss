@@ -1,0 +1,105 @@
+.modalWrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  right: -300px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  border-left: 2px solid rgb(240, 240, 240);
+  background:rgb(51, 51, 51);
+  color:rgb(240, 240, 240);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 99;
+  transition: 0.7s;
+}
+
+.buttonContainer {
+    display: flex;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.exitButton {
+    display: flex;
+  border: 2px solid rgb(240, 240, 240);
+  padding: 0px 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    background: rgb(51, 51, 51);
+  }
+
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.modalItem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.productName {
+  display: flex;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.productImage {
+  object-fit: cover;
+  width: 80%;
+  border-radius: 5px;
+  display: flex;
+  padding: .5em .5em;
+}
+
+.imageButtonWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.removeButton {
+  display: flex;
+  height: 15%;
+  font-weight: bold;
+  border: 2px solid rgb(240, 240, 240);
+  padding: 0px 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    background: rgb(51, 51, 51);
+  }
+
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

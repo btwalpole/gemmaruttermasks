@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import {useState} from 'react'
+import {useCart} from '@hooks/use-cart'
 import styles from '@styles/Product.module.scss'
 import products from '@data/products.json'
 
@@ -7,6 +8,8 @@ export default function Product({product}) {
     let { variants, groupTitle } = product;
     const [variant, setVariant] = useState(variants[0]);
     console.log('current variant', variant)
+
+    const { addToCart } = useCart();
 
     function showVariant(id) {
         let selectedVariant = variants.find(variant => variant.id === id);
@@ -16,11 +19,13 @@ export default function Product({product}) {
         //setActiveButton(selected.name);
     };
 
+    let { id, image, price } = variant
+
     return (
         <div className={styles.container}>
             <main className={styles.main}>
                 <div className={styles.productImage}>
-                    <Image src={variant.image} width="1024" height="768" alt={groupTitle} />
+                    <Image src={image} width="1024" height="768" alt={groupTitle} />
                 </div>
                 
                 <div>
@@ -40,9 +45,12 @@ export default function Product({product}) {
                     })}
                 </div>
                 
-                <p className={styles.description}>£{variant.price.toFixed(2)}</p>
+                <p className={styles.description}>£{price.toFixed(2)}</p>
                 <p>
-                    <button className={styles.button}>
+                    <button 
+                      className={styles.button} 
+                      onClick={() => addToCart({id})}
+                    >
                     Add To Cart
                     </button>
                 </p>
