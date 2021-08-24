@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useCart } from "@hooks/use-cart";
+import Button from "@components/Button";
 import styles from "@styles/Product.module.scss";
 import products from "@data/products.json";
 
@@ -58,31 +59,29 @@ export default function Product({ product }) {
           <p className={styles.description}>£{price.toFixed(2)}</p>
           <div className={styles.addToCartWrapper}>
             <div className={styles.quantityButtonsWrapper}>
-              <button
+              <Button
                 className={styles.editQuantityButton}
                 onClick={() => handleQuantityChange("decrement")}
               >
                 -
-              </button>
+              </Button>
               <h2>{quantity}</h2>
-              <button
+              <Button
                 className={styles.editQuantityButton}
                 onClick={() => handleQuantityChange("increment")}
               >
                 +
-              </button>
+              </Button>
             </div>
-            <button
+            <Button
               className={styles.addToCartButton}
               onClick={() => addToCart({ id, quantity })}
             >
               Add To Cart
-            </button>
+            </Button>
           </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>&copy; Gemma Rutter Masks, 2021</footer>
     </div>
   );
 }

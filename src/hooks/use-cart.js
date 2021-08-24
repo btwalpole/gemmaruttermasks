@@ -65,6 +65,13 @@ export function useCartState() {
     return accumulator + quantity;
   }, 0);
 
+  const lineItems = cartItems.map((item) => {
+    return {
+      price: item.id,
+      quantity: item.quantity,
+    };
+  });
+
   function addToCart({ id, quantity } = {}) {
     updateCart((prev) => {
       //deep clone of prev state
@@ -116,6 +123,16 @@ export function useCartState() {
     });
   }
 
+  async function checkoutAPI() {
+    console.log("line iitems json ", JSON.stringify(lineItems));
+    const response = await fetch("/api/checkoutSessions", {
+      method: "POST",
+      body: JSON.stringify(lineItems),
+    });
+    const data = await response.json();
+    console.log("api req data", data);
+  }
+
   return {
     cart,
     subTotal,
@@ -126,6 +143,8 @@ export function useCartState() {
     toggleModal,
     cartModal,
     checkout,
+    checkoutAPI,
+    lineItems,
   };
 }
 

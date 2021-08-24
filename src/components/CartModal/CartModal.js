@@ -1,5 +1,6 @@
 import { FaTimes } from "react-icons/fa";
 import { useCart } from "@hooks/use-cart";
+import Button from "@components/Button";
 import Image from "next/image";
 import styles from "./CartModal.module.scss";
 
@@ -10,6 +11,7 @@ export default function CartModal() {
     subTotal,
     totalItems,
     checkout,
+    checkoutAPI,
     cartItems,
     removeFromCart,
   } = useCart();
@@ -17,25 +19,27 @@ export default function CartModal() {
   return (
     <div className={styles.modalWrapper} active={active} id="modal">
       <div className={styles.buttonContainer}>
-        <button className={styles.exitButton} onClick={toggleModal}>
+        <Button className={styles.exitButton} onClick={toggleModal}>
           <FaTimes />
-        </button>
+        </Button>
       </div>
       <h1>Cart</h1>
       <h2>Subtotal £{subTotal}</h2>
-      <button onClick={checkout}>Checkout</button>
+      <Button onClick={checkoutAPI} className={styles.checkout}>
+        Checkout
+      </Button>
       {cartItems.map((product) => {
         let { id, name, image, quantity } = product;
         return (
           <div key={id} className={styles.modalItem}>
             <h3 className={styles.productName}>{name}</h3>
             <div className={styles.imageButtonWrapper}>
-              <button
+              <Button
                 onClick={() => removeFromCart(id)}
                 className={styles.removeButton}
               >
                 <FaTimes />
-              </button>
+              </Button>
               <div className={styles.productImage}>
                 <Image src={image} width={1024} height={768} alt={name} />
               </div>

@@ -6,8 +6,12 @@ export async function initiateCheckout({ lineItems } = {}) {
   const stripe = await stripePromise;
   await stripe.redirectToCheckout({
     mode: "payment",
+    shipping_rates: ["shr_1JS0MIBn6ujpoUXKEDHuEEkk"],
+    shipping_address_collection: {
+      allowed_countries: ["GB"],
+    },
     lineItems,
-    successUrl: `${window.location.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+    successUrl: `${window.location.origin}?session_id={CHECKOUT_SESSION_ID}`,
     cancelUrl: window.location.origin,
   });
   //above in successurl we get the origin from the window and pass along a session id

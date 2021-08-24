@@ -1,0 +1,22 @@
+.button {
+    display: flex;
+    border: 2px solid rgb(240, 240, 240);
+    padding: 0px 5px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+        background: rgb(87, 87, 87);
+    }
+
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
