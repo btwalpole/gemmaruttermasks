@@ -1,5 +1,6 @@
 import { useState, createContext, useContext } from "react";
-import products from '@data/products.json'
+import { initiateCheckout } from "@lib/payments";
+import products from "@data/products.json";
 
 const defaultCart = {
   products: {}, //easier to icompare one object to another than with arrays
@@ -12,7 +13,7 @@ export function useCartState() {
   const [cartModal, setCartModal] = useState(false);
 
   function toggleModal() {
-    console.log('toggling modal')
+    console.log("toggling modal");
     if (cartModal) {
       closeCartModal();
     } else {
@@ -30,15 +31,15 @@ export function useCartState() {
   function closeCartModal() {
     document.getElementById("modal").style.right = "-300px";
   }
-  
+
   //create array from current cart state, map over it and return
   //each item and it's price (taken from the products.json)
-  
+
   const cartItems = Object.keys(cart.products).map((key) => {
     let product = undefined;
-    for(let prodGroup of products) {
-      product = prodGroup.variants.find(({ id }) => `${id}` === `${key}`)
-      if(product) {
+    for (let prodGroup of products) {
+      product = prodGroup.variants.find(({ id }) => `${id}` === `${key}`);
+      if (product) {
         break;
       }
     }
@@ -51,7 +52,7 @@ export function useCartState() {
     };
   });
 
-  console.log('cart items ', cartItems)
+  console.log("cart items ", cartItems);
 
   const subTotal = cartItems.reduce(
     (accumulator, { pricePerItem, quantity }) => {
@@ -64,19 +65,20 @@ export function useCartState() {
     return accumulator + quantity;
   }, 0);
 
-  function addToCart({id} = {}) {
+  function addToCart({ id, quantity } = {}) {
     updateCart((prev) => {
       //deep clone of prev state
       let cartState = JSON.parse(JSON.stringify(prev));
 
-      console.log('prev Cart State ', cartState)
+      console.log("prev Cart State ", cartState);
 
       if (cartState.products[id]) {
-        cartState.products[id].quantity++;
+        cartState.products[id].quantity =
+          cartState.products[id].quantity + quantity;
       } else {
         cartState.products[id] = {
           id,
-          quantity: 1,
+          quantity,
         };
       }
 
@@ -90,11 +92,29 @@ export function useCartState() {
 
   function removeFromCart(id) {
     console.log("removing product: " + id);
-    updateCart(cartItems.filter((product) => product.id !== id));
+    updateCart((prev) => {
+      let cartState = JSON.parse(JSON.stringify(prev));
+      if (cartState.products[id]) {
+        delete cartState.products[id];
+        console.log("deleting ", id);
+      }
+      return cartState;
+    });
   }
 
   console.log("cart contents: ");
   console.log(cart);
+
+  function checkout() {
+    initiateCheckout({
+      lineItems: cartItems.map((item) => {
+        return {
+          price: item.id,
+          quantity: item.quantity,
+        };
+      }),
+    });
+  }
 
   return {
     cart,
@@ -104,7 +124,8 @@ export function useCartState() {
     addToCart,
     removeFromCart,
     toggleModal,
-    cartModal
+    cartModal,
+    checkout,
   };
 }
 

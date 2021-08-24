@@ -1,11 +1,35 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import Container from '@components/Container'
-import styles from '@styles/Home.module.scss'
-import products from '@data/products.json'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import Container from "@components/Container";
+import useViewport from "@hooks/Viewport";
+import styles from "@styles/Home.module.scss";
+import products from "@data/products.json";
 
 export default function Home() {
+  const width = useViewport();
+  const breakpoint = 600;
+  let ResponsiveHeroImg;
+
+  if (width < breakpoint) {
+    ResponsiveHeroImg = (
+      <Image
+        src={`/images/hero_mobile.jpeg`}
+        alt="hero image"
+        width={1209}
+        height={861}
+      />
+    );
+  } else {
+    ResponsiveHeroImg = (
+      <Image
+        src={`/images/hero_desktop.jpeg`}
+        alt="hero image"
+        width={1600}
+        height={597}
+      />
+    );
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -14,34 +38,44 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>  
+      <div className={styles.heroWrapper}>
+        <div className={styles.heroImg}>{ResponsiveHeroImg}</div>
+      </div>
+
+      <main>
         <Container>
           <h1>Gemma Rutter Masks</h1>
           <h2>Available Masks</h2>
           <ul className={styles.products}>
-            {products.map(product => {
+            {products.map((product) => {
               return (
-              <li key={product.groupId}>
-                <Link href={`/products/${product.groupId}`}>
-                  <a>
-                    <Image width="4032" height="3024" src={product.variants[0].image} alt={`Card of ${product.groupTitle}`} />
-                    <h3 className={styles.productTitle}>{product.groupTitle}</h3>
-                    <p className={styles.productPrice}>£{product.variants[0].price}</p>
-                    <p>
-                      <button>Add To Cart</button>
-                    </p>
-                  </a>
-                </Link>
-              </li>
-              )
+                <li key={product.groupId}>
+                  <Link href={`/products/${product.groupId}`}>
+                    <a>
+                      <Image
+                        width="4032"
+                        height="3024"
+                        src={product.variants[0].image}
+                        alt={`Card of ${product.groupTitle}`}
+                      />
+                      <h3 className={styles.productTitle}>
+                        {product.groupTitle}
+                      </h3>
+                      <p className={styles.productPrice}>
+                        £{product.variants[0].price}
+                      </p>
+                    </a>
+                  </Link>
+                </li>
+              );
             })}
           </ul>
-        </Container>        
+        </Container>
       </main>
 
       <footer className={styles.footer}>
         &copy; Gemma Rutter Masks, {new Date().getFullYear()}
       </footer>
     </div>
-  )
+  );
 }
