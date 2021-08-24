@@ -1,13 +1,12 @@
-const stripe = require("stripe")(process.env.NEXT_SECRET_STRIPE_API_KEY);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 //import { loadStripe } from "@stripe/stripe-js";
-
 //const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
       // Create Checkout Sessions from body params.
-      console.log("request body ", req.body);
+      //console.log("request body ", req.body);
       const session = await stripe.checkout.sessions.create({
         //line_items: req.body,
         line_items: { price: "price_1JQVjeBn6ujpoUXKNmDd1v3y", quantity: 2 },
@@ -17,7 +16,7 @@ export default async function handler(req, res) {
           allowed_countries: ["GB"],
         },
         */
-        payment_method_types: ["card"],
+        payment_method_types: ["card", "bacs_debit"],
         mode: "payment",
         success_url: `${req.headers.origin}/?success=true&session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${req.headers.origin}/?canceled=true`,

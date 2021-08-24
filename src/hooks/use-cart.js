@@ -127,7 +127,8 @@ export function useCartState() {
     console.log("line iitems json ", JSON.stringify(lineItems));
     const response = await fetch("/api/checkoutSessions", {
       method: "POST",
-      body: JSON.stringify(lineItems),
+      body: "hi",
+      //body: JSON.stringify(lineItems),
     });
     const data = await response.json();
     console.log("api req data", data);

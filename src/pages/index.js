@@ -6,6 +6,12 @@ import { useEffect } from "react";
 import styles from "@styles/Home.module.scss";
 import products from "@data/products.json";
 
+import { loadStripe } from "@stripe/stripe-js";
+
+// Make sure to call `loadStripe` outside of a component’s render to avoid
+// recreating the `Stripe` object on every render.
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_API_KEY);
+
 export default function Home() {
   const width = useViewport();
   const breakpoint = 600;
