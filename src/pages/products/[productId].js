@@ -20,15 +20,14 @@ const LiningButton = styled.button`
     props.selected
       ? "6px solid rgb(240, 240, 240)"
       : "2px solid rgb(240, 240, 240)"};
-
-      &:focus,
-    &:hover,
-    &:visited,
-    &:link,
-    &:active {
-        border: 6px solid rgb(240, 240, 240);
-    }
-    transition: border 150ms ease-in-out, transform 150ms ease;
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+      border: 6px solid rgb(240, 240, 240);
+  }
+  transition: border 150ms ease-in-out, transform 150ms ease;
 `;
 
 export default function Product({ product }) {
@@ -36,15 +35,10 @@ export default function Product({ product }) {
   const [variant, setVariant] = useState(variants[0]);
   const [quantity, setQuantity] = useState(1);
   const [activeButtonId, setActiveButtonId] = useState(variants[0].id);
-
-  console.log("current variant", variant);
-
   const { addToCart } = useCart();
 
   function showVariant(id) {
     let selectedVariant = variants.find((variant) => variant.id === id);
-    console.log("trying to select id", id);
-    console.log(selectedVariant);
     setVariant(selectedVariant);
     setActiveButtonId(id);
   }
@@ -83,7 +77,7 @@ export default function Product({ product }) {
               );
             })}
           </div>
-          <p className={styles.description}>£{price.toFixed(2)}</p>
+          <p className={styles.price}>£{price.toFixed(2)}</p>
           <div className={styles.addToCartWrapper}>
             <div className={styles.quantityButtonsWrapper}>
               <Button
