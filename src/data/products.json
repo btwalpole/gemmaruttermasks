@@ -6,6 +6,7 @@
             {
                 "id": "price_1JQVjeBn6ujpoUXKNmDd1v3y",
                 "name": "Afternoon Tea - Beige",
+                "liningName": "Beige",
                 "image": "/images/afternoonTeaBeige.jpeg",
                 "color": "rgb(211, 196, 182)",
                 "price": 8.00
@@ -13,6 +14,7 @@
             {
                 "id": "price_1JQVknBn6ujpoUXK2e4jkB5J",
                 "name": "Afternoon Tea - Blush",
+                "liningName": "Blush",
                 "image": "/images/afternoonTeaBlush.jpeg",
                 "color": "rgb(185, 108, 122)",
                 "price": 8.00
@@ -20,6 +22,7 @@
             {
                 "id": "price_1JQVkGBn6ujpoUXKBq7LglVU",
                 "name": "Afternoon Tea - Hot Pink",
+                "liningName": "Hot Pink",
                 "image": "/images/afternoonTeaHotPink.jpeg",
                 "color": "rgb(243, 58, 111)",
                 "price": 8.00
@@ -33,6 +36,7 @@
             {
                 "id": "price_1JQX0nBn6ujpoUXKL9DQksso",
                 "name": "Cherry Blossom Blush - Original",
+                "liningName": "Original",
                 "image": "/images/cherryBlossomBlushOriginal.jpeg",
                 "color": "rgb(185, 108, 122)",
                 "price": 8.00
@@ -40,7 +44,9 @@
             {
                 "id": "price_1JQX19Bn6ujpoUXKZFne9UBy",
                 "name": "Cherry Blossom Blush - Maroon",
+                "liningName": "Maroon",
                 "image": "/images/cherryBlossomBlushMaroon.jpeg",
+                "color": "rgb(185, 108, 122)",
                 "price": 8.00
             }
         ]
@@ -52,7 +58,9 @@
             {
                 "id": "price_1JQWzMBn6ujpoUXKK2YyM8Ok",
                 "name": "Calypso",
+                "liningName": "Original",
                 "image": "/images/calypso.jpeg",
+                "color": "rgb(185, 108, 122)",
                 "price": 8.00
             }    
         ]

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useCart } from "@hooks/use-cart";
 import Button from "@components/Button";
 import styles from "@styles/Product.module.scss";
-import styled from 'styled-components';
+import styled from "styled-components";
 import products from "@data/products.json";
 
 const LiningButton = styled.button`
@@ -25,7 +25,7 @@ const LiningButton = styled.button`
   &:visited,
   &:link,
   &:active {
-      border: 6px solid rgb(240, 240, 240);
+    border: 6px solid rgb(240, 240, 240);
   }
   transition: border 150ms ease-in-out, transform 150ms ease;
 `;
@@ -53,7 +53,7 @@ export default function Product({ product }) {
     }
   }
 
-  let { id, image, price } = variant;
+  let { id, image, price, liningName } = variant;
 
   return (
     <div className={styles.container}>
@@ -64,6 +64,7 @@ export default function Product({ product }) {
 
         <div>
           <h1>{groupTitle}</h1>
+          <h2>{liningName}</h2>
           <div className={styles.liningButtonsWrapper}>
             {variants.map((mask) => {
               const { id, color } = mask;

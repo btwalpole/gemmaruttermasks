@@ -1,0 +1,40 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid rgb(240, 240, 240);
+    border-radius: 5px;
+    background-color: rgb(49, 49, 49);
+    color: rgb(240, 240, 240);
+    text-align: center;
+  }
+
+.exitButton {
+    position: absolute;
+    margin: .5em .5em;
+    width: 2em;
+    border: 2px solid rgb(240, 240, 240);
+    padding: 0px 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  
+    &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+      background: rgb(117, 117, 117);
+    }
+  
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.text {
+    margin-top: 1.5em;
+}
