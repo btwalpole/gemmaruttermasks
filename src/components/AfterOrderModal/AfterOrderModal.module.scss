@@ -8,6 +8,7 @@
     background-color: rgb(49, 49, 49);
     color: rgb(240, 240, 240);
     text-align: center;
+    z-index: 99;
   }
 
 .exitButton {
@@ -37,4 +38,5 @@
 
 .text {
     margin-top: 1.5em;
+    padding: 0 2em;
 }
