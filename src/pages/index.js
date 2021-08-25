@@ -52,6 +52,10 @@ export default function Home() {
         "Order canceled -- continue to shop around and checkout when you’re ready."
       );
     }
+
+    //set modal state to active - which renders the modal
+    //conditionally render the below in the return statement below
+
   }, []);
 
   return (
