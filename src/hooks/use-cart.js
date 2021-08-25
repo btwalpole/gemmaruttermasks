@@ -2,6 +2,9 @@ import { useState, createContext, useContext } from "react";
 import { initiateCheckout } from "@lib/payments";
 import products from "@data/products.json";
 
+//import { loadStripe } from "@stripe/stripe-js";
+//const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_API_KEY);
+
 const defaultCart = {
   products: {}, //easier to icompare one object to another than with arrays
 };
