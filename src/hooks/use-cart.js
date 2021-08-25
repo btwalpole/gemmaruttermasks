@@ -126,16 +126,10 @@ export function useCartState() {
 
   async function checkoutAPI() {
     console.log("line iitems json ", JSON.stringify(lineItems));
+    
     const response = await fetch("/api/checkoutSessions", {
       method: "POST",
-      body: "hi",
-      /*
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-        // 'Content-Type': 'application/x-www-form-urlencoded',
-      },*/
-      //body: JSON.stringify(lineItems),
+      body: JSON.stringify(lineItems),
     });
     const data = await response.json();
     const stripe = await getStripe();
