@@ -20,6 +20,10 @@
   max-width: 400px;
 }
 
+.liningButtonsWrapper {
+  display: flex;
+}
+
 .liningButton {
   padding: 0px 5px;
   border-radius: 50px;
@@ -29,29 +33,6 @@
   width: 50px;
   height: 50px;
   margin: 10px 10px;
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo {
-  height: 1em;
 }
 
 .button {
@@ -70,6 +51,7 @@
 .addToCartWrapper {
   display: flex;
   margin-top: 30px;
+  align-items: center;
   justify-content: space-between;
   width: 300px;
 }
@@ -87,6 +69,6 @@
   font-size: 30px;
 }
 
-.AddToCartButton {
-  font-size: 30px;
+.addToCartButton {
+  font-size: 1.6em;
 }

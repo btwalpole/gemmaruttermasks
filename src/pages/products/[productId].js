@@ -3,12 +3,39 @@ import { useState } from "react";
 import { useCart } from "@hooks/use-cart";
 import Button from "@components/Button";
 import styles from "@styles/Product.module.scss";
+import styled from 'styled-components';
 import products from "@data/products.json";
+
+const LiningButton = styled.button`
+  padding: 0px 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px;
+  background: ${(props) => props.color};
+  border: ${(props) =>
+    props.selected
+      ? "6px solid rgb(240, 240, 240)"
+      : "2px solid rgb(240, 240, 240)"};
+
+      &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+        border: 6px solid rgb(240, 240, 240);
+    }
+    transition: border 150ms ease-in-out, transform 150ms ease;
+`;
 
 export default function Product({ product }) {
   let { variants, groupTitle } = product;
   const [variant, setVariant] = useState(variants[0]);
   const [quantity, setQuantity] = useState(1);
+  const [activeButtonId, setActiveButtonId] = useState(variants[0].id);
 
   console.log("current variant", variant);
 
@@ -19,7 +46,7 @@ export default function Product({ product }) {
     console.log("trying to select id", id);
     console.log(selectedVariant);
     setVariant(selectedVariant);
-    //setActiveButton(selected.name);
+    setActiveButtonId(id);
   }
 
   function handleQuantityChange(direction) {
@@ -43,16 +70,16 @@ export default function Product({ product }) {
 
         <div>
           <h1>{groupTitle}</h1>
-          <div>
+          <div className={styles.liningButtonsWrapper}>
             {variants.map((mask) => {
               const { id, color } = mask;
               return (
-                <button
-                  className={styles.liningButton}
+                <LiningButton
                   key={id}
-                  style={{ background: color }}
+                  color={color}
                   onClick={() => showVariant(id)}
-                ></button>
+                  selected={activeButtonId === id ? true : false}
+                ></LiningButton>
               );
             })}
           </div>
