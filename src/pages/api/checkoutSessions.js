@@ -22,9 +22,12 @@ export default async function handler(req, res) {
         cancel_url: `${req.headers.origin}/?canceled=true`,
       });
 
-      res.setHeader("Access-Control-Allow-Origin", "'https://3000-coral-ptarmigan-jhczgp8y.ws-eu16.gitpod.io"); // update to match the domain you will make the request from
-      res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-      res.redirect(303, session.url);
+      //res.setHeader("Access-Control-Allow-Origin", "https://3000-coral-ptarmigan-jhczgp8y.ws-eu16.gitpod.io"); // update to match the domain you will make the request from
+      //res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+      console.log('session: ', session)
+      
+      //res.redirect(303, session.url);
+      res.status(200).json(session)
     } catch (err) {
       console.log('error res: ', res)
       res.status(err.statusCode || 500).json(err.message);

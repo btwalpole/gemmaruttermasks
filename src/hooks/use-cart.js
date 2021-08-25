@@ -1,9 +1,7 @@
 import { useState, createContext, useContext } from "react";
 import { initiateCheckout } from "@lib/payments";
 import products from "@data/products.json";
-
-//import { loadStripe } from "@stripe/stripe-js";
-//const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_API_KEY);
+import getStripe from '../lib/get-stripe';
 
 const defaultCart = {
   products: {}, //easier to icompare one object to another than with arrays
@@ -131,9 +129,30 @@ export function useCartState() {
     const response = await fetch("/api/checkoutSessions", {
       method: "POST",
       body: "hi",
+      /*
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },*/
       //body: JSON.stringify(lineItems),
     });
     const data = await response.json();
+    const stripe = await getStripe();
+    console.log('response : ', response)
+    console.log('data : ', data)
+    console.log('response id: ', response.id)
+    console.log('data id: ', data.id)
+    const { error } = await stripe.redirectToCheckout({
+      // Make the id field from the Checkout Session creation API response
+      // available to this file, so you can provide it as parameter here
+      // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
+      sessionId: data.id,
+    })
+    // If `redirectToCheckout` fails due to a browser or network
+    // error, display the localized error message to your customer
+    // using `error.message`.
+    console.warn(error.message)
     console.log("api req data", data);
   }
 
