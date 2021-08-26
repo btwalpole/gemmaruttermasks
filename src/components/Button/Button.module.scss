@@ -3,17 +3,20 @@
     border: 2px solid rgb(240, 240, 240);
     padding: 0px 5px;
     font-family: inherit;
+    font-weight: normal;
     border-radius: 5px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    background-color: rgb(240, 240, 240);
+    color: rgb(49, 49, 49);
 
     &:focus,
     &:hover,
     &:visited,
     &:link,
     &:active {
-        background: rgb(87, 87, 87);
+        background: rgb(160, 160, 160);
     }
 
     transition: background 250ms ease-in-out, transform 150ms ease;

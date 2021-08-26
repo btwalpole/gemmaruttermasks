@@ -23,8 +23,7 @@ export default function CartModal() {
           <FaTimes />
         </Button>
       </div>
-      <h1>Cart</h1>
-      <h2>Subtotal £{subTotal}</h2>
+      <h1>Cart: £{subTotal}</h1>
       <Button onClick={checkoutAPI} className={styles.checkout}>
         Checkout
       </Button>
