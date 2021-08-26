@@ -10,28 +10,22 @@ function Header() {
   let { toggleModal, subTotal } = useCart();
   return (
     <header className={styles.header}>
-      <Container className={styles.headerContainer}>
-        <div className={styles.logoTitleWrapper}>
-          <Link href="/">
-            <a className={styles.logo}>
-              <Image
-                src="/images/logo.png"
-                alt="logo"
-                width={215}
-                height={213}
-              />
-            </a>
-          </Link>
-          <Link href="/">
-            <a>
-              <p className={styles.headerTitle}>Gemma Rutter Masks</p>
-            </a>
-          </Link>
-        </div>
-        <p className={styles.headerCart} onClick={toggleModal}>
-          <FaShoppingCart />£{subTotal}
-        </p>
-      </Container>
+      <div className={styles.logoTitleWrapper}>
+        <Link href="/">
+          <a className={styles.logo}>
+            <Image src="/images/logo.png" alt="logo" width={215} height={213} />
+          </a>
+        </Link>
+        <Link href="/">
+          <a>
+            <p className={styles.headerTitle}>Gemma Rutter Masks</p>
+          </a>
+        </Link>
+      </div>
+      <p className={styles.headerCart} onClick={toggleModal}>
+        £{subTotal}
+        <FaShoppingCart />
+      </p>
     </header>
   );
 }
