@@ -60,7 +60,7 @@
                 "name": "Cherry Blossom Scarlet - Original",
                 "liningName": "Original",
                 "image": "/images/masks/cherryBlossomScarlet.jpeg",
-                "color": "rgb(211, 196, 182)",
+                "color": "#e31c21",
                 "price": 8.00
             },
             {
@@ -68,23 +68,23 @@
                 "name": "Cherry Blossom Scarlet - Blush",
                 "liningName": "Blush",
                 "image": "/images/masks/cherryBlossomScarletBlush.jpeg",
-                "color": "rgb(211, 196, 182)",
+                "color": "#b26974",
                 "price": 8.00
             },
             {
-                "id": "",
-                "name": "Cherry Blossom Scarlet - Blush",
-                "liningName": "Blush",
-                "image": "/images/masks/cherryBlossomScarletBlush.jpeg",
-                "color": "rgb(211, 196, 182)",
+                "id": "price_1JTBYoBn6ujpoUXKLr6mSXQF",
+                "name": "Cherry Blossom Scarlet - Hot Pink",
+                "liningName": "Hot Pink",
+                "image": "/images/masks/cherryBlossomScarletBlushHotPink.jpeg",
+                "color": "#f73873",
                 "price": 8.00
             },
             {
-                "id": "",
-                "name": "Cherry Blossom Scarlet - Blush",
-                "liningName": "Blush",
-                "image": "/images/masks/cherryBlossomScarletBlush.jpeg",
-                "color": "rgb(211, 196, 182)",
+                "id": "price_1JTBZMBn6ujpoUXKXdnEir9D",
+                "name": "Cherry Blossom Scarlet - Navy",
+                "liningName": "Navy",
+                "image": "/images/masks/cherryBlossomScarletBlushNavy.jpeg",
+                "color": "#3f496d",
                 "price": 8.00
             }
         ]
@@ -123,6 +123,70 @@
                 "color": "rgb(185, 108, 122)",
                 "price": 8.00
             }    
+        ]
+    },
+    {
+        "groupTitle": "Daisy",
+        "groupId": "daisy",
+        "variants": [
+            {
+                "id": "price_1JTBgXBn6ujpoUXK94KxskLY",
+                "name": "Daisy",
+                "liningName": "Original",
+                "image": "/images/masks/daisy.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00
+            }    
+        ]
+    },
+    {
+        "groupTitle": "Alaska",
+        "groupId": "alaska",
+        "variants": [
+            {
+                "id": "price_1JTBiQBn6ujpoUXKPYbG63l0",
+                "name": "Alaska",
+                "liningName": "Original",
+                "image": "/images/masks/alaska.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00
+            }    
+        ]
+    },
+    {
+        "groupTitle": "Seville",
+        "groupId": "seville",
+        "variants": [
+            {
+                "id": "price_1JTBjxBn6ujpoUXKpvkg7jZZ",
+                "name": "Seville",
+                "liningName": "Original",
+                "image": "/images/masks/seville.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00
+            }    
+        ]
+    },
+    {
+        "groupTitle": "Feather",
+        "groupId": "feather",
+        "variants": [
+            {
+                "id": "price_1JTBmCBn6ujpoUXKKVSUsFFh",
+                "name": "Feather - Original",
+                "liningName": "Original",
+                "image": "/images/masks/feather.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00
+            },
+            {
+                "id": "price_1JTBmzBn6ujpoUXKgQiNUzZL",
+                "name": "Feather - Original",
+                "liningName": "Original",
+                "image": "/images/masks/featherBlue.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00
+            }      
         ]
     }
 ]
