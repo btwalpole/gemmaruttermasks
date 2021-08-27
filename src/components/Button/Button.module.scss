@@ -16,10 +16,10 @@
     &:visited,
     &:link,
     &:active {
-        background: rgb(160, 160, 160);
+        border: 2px solid rgb(255, 102, 0);
     }
 
-    transition: background 250ms ease-in-out, transform 150ms ease;
+    transition: border 250ms ease-in-out, transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
 }

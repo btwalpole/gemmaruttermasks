@@ -68,8 +68,21 @@
   font-size: 30px;
 }
 
+.addToCartButtonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .addToCartButton {
+  display: flex;
+  transition: font-size 250ms;
   font-size: 1.6em;
   background-color: rgb(240, 240, 240);
   color: rgb(49, 49, 49);
+}
+
+.addToCartButton:hover {
+    font-size: 1.5em;
 }

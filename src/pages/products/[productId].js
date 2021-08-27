@@ -95,12 +95,14 @@ export default function Product({ product }) {
                 +
               </Button>
             </div>
-            <Button
-              className={styles.addToCartButton}
-              onClick={() => addToCart({ id, quantity })}
-            >
-              Add To Cart
-            </Button>
+            <div className={styles.addToCartButtonWrapper}>
+              <Button
+                className={styles.addToCartButton}
+                onClick={() => addToCart({ id, quantity })}
+              >
+                Add To Cart
+              </Button>
+            </div>
           </div>
         </div>
       </main>
