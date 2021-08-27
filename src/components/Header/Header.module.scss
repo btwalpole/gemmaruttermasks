@@ -8,6 +8,10 @@
     p {
         margin: 0;
     }
+
+    @media only screen and (max-width: 600px) {
+        padding: 5px 5px;
+    }
 }
 
 .headerContainer {
@@ -20,6 +24,8 @@
     display: flex;
     text-decoration: none;
     align-items: center;
+    justify-content: flex-start;
+
 }
 
 .logo {
@@ -29,14 +35,24 @@
     margin: 0 40px 0 0;
 
   @media only screen and (max-width: 600px) {
-    height: 40px;
+    max-width: 50px;
     padding: 0 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .headerTitle {
     font-size: 2em;
     font-weight: normal;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 0 .5em;
+    }
 }
 
 .headerCart {

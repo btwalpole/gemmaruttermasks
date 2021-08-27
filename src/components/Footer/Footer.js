@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <p>
-        Contact us at gemmaruttermasks@gmail.<span>com</span> or DM{" "}
+        Contact us at gemmaruttermasks@gmail.<span>com</span> or at{" "}
         <a
           href="https://instagram.com/gemmaruttermasks?igshid=1riu84ysctghb"
           target="_blank"
