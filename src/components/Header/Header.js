@@ -2,9 +2,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "@hooks/use-cart";
-
 import styles from "./Header.module.scss";
-import Container from "@components/Container";
 
 function Header() {
   let { toggleModal, subTotal } = useCart();

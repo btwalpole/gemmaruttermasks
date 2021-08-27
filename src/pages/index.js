@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import Container from "@components/Container";
 import AfterOrderModal from "@components/AfterOrderModal";
-import Arrows from "@components/Arrows"
+import HomeProductCard  from "@components/HomeProductCard";
 import useViewport from "@hooks/Viewport";
 import { useEffect, useState } from "react";
 import styles from "@styles/Home.module.scss";
@@ -94,23 +93,7 @@ export default function Home() {
 
             <ul className={styles.products}>
               {products.map((product) => {
-                return (
-                  <li key={product.groupId} className={styles.product}>
-                    <Link href={`/products/${product.groupId}`}>
-                      <a>
-                        <Image
-                          width="4032"
-                          height="3024"
-                          src={product.variants[0].image}
-                          alt={`Card of ${product.groupTitle}`}
-                        />
-                        <h3 className={styles.productTitle}>
-                          {product.groupTitle}
-                        </h3>
-                      </a>
-                    </Link>
-                  </li>
-                );
+                return (<HomeProductCard key={product.groupId} product={product} />)
               })}
             </ul>
           </Container>
