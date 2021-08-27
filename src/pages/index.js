@@ -94,7 +94,7 @@ export default function Home() {
             <ul className={styles.products}>
               {products.map((product) => {
                 return (
-                  <li key={product.groupId}>
+                  <li key={product.groupId} className={styles.product}>
                     <Link href={`/products/${product.groupId}`}>
                       <a>
                         <Image
