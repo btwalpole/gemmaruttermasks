@@ -55,6 +55,10 @@
     }
 }
 
+.headerTitle:hover {
+    color:rgb(255, 102, 0);
+  }
+
 .headerCart {
     display: flex;
     justify-content: center;
@@ -68,3 +72,7 @@
         font-size: 1.5em;
     }
 }
+
+.headerCart:hover {
+    color:rgb(255, 102, 0);
+  }

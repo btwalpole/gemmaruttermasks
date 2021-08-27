@@ -1,3 +1,7 @@
+.product {
+  //min-width: 200px;
+}
+
 
 .product:hover {
     color: rgb(255, 102, 0);
@@ -15,8 +19,6 @@
   
   .arrow {
     position: absolute;
-    right: 5%;
-    top: 45%;
     font-size: 1.3em;
     --fa-primary-color: rgb(1, 0, 41);
     color: var(--fa-primary-color);
@@ -29,4 +31,14 @@
   
   .arrow:hover {
     color:rgb(255, 102, 0);
+  }
+
+  .right {
+    right: 5%;
+    top: 45%;
+  }
+
+  .left {
+    left: 5%;
+    top: 45%;
   }
