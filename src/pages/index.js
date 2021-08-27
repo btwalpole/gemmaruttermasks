@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "@components/Container";
 import AfterOrderModal from "@components/AfterOrderModal";
+import Arrows from "@components/Arrows"
 import useViewport from "@hooks/Viewport";
 import { useEffect, useState } from "react";
 import styles from "@styles/Home.module.scss";
