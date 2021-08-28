@@ -4,7 +4,7 @@
         "groupId": "afternoon-tea",
         "variants": [
             {
-                "id": "price_1JQVjeBn6ujpoUXKNmDd1v3y",
+                "id": "price_1JTNkXBn6ujpoUXKUeZa9jLr",
                 "name": "Afternoon Tea - Beige",
                 "liningName": "Beige",
                 "image": "/images/masks/afternoonTeaBeige.jpeg",
@@ -12,7 +12,7 @@
                 "price": 8.00
             },
             {
-                "id": "price_1JQVknBn6ujpoUXK2e4jkB5J",
+                "id": "price_1JTNkzBn6ujpoUXKK4vsLxhm",
                 "name": "Afternoon Tea - Blush",
                 "liningName": "Blush",
                 "image": "/images/masks/afternoonTeaBlush.jpeg",
@@ -20,7 +20,7 @@
                 "price": 8.00
             },
             {
-                "id": "price_1JQVkGBn6ujpoUXKBq7LglVU",
+                "id": "price_1JTNkqBn6ujpoUXKiYwLuwnd",
                 "name": "Afternoon Tea - Hot Pink",
                 "liningName": "Hot Pink",
                 "image": "/images/masks/afternoonTeaHotPink.jpeg",
@@ -34,7 +34,7 @@
         "groupId": "monet",
         "variants": [
             {
-                "id": "price_1JTAo4Bn6ujpoUXKM5N3f5Ea",
+                "id": "price_1JTNluBn6ujpoUXKecNMUvXO",
                 "name": "Monet - Original",
                 "liningName": "Original",
                 "image": "/images/masks/monet.jpeg",
@@ -42,7 +42,7 @@
                 "price": 8.00
             },
             {
-                "id": "price_1JTAqHBn6ujpoUXKACwiXMpR",
+                "id": "price_1JTNmABn6ujpoUXKaWdoF6uG",
                 "name": "Monet - Purple",
                 "liningName": "Purple",
                 "image": "/images/masks/monetPurple.jpeg",
@@ -56,7 +56,7 @@
         "groupId": "Cherry Blossom Scarlet",
         "variants": [
             {
-                "id": "price_1JTAtLBn6ujpoUXKwugrUtzG",
+                "id": "price_1JTNmQBn6ujpoUXKebn9fzH4",
                 "name": "Cherry Blossom Scarlet - Original",
                 "liningName": "Original",
                 "image": "/images/masks/cherryBlossomScarlet.jpeg",
@@ -64,7 +64,7 @@
                 "price": 8.00
             },
             {
-                "id": "price_1JTAx2Bn6ujpoUXKPNqZIdcK",
+                "id": "price_1JTNmZBn6ujpoUXKq483NQOs",
                 "name": "Cherry Blossom Scarlet - Blush",
                 "liningName": "Blush",
                 "image": "/images/masks/cherryBlossomScarletBlush.jpeg",
@@ -72,7 +72,7 @@
                 "price": 8.00
             },
             {
-                "id": "price_1JTBYoBn6ujpoUXKLr6mSXQF",
+                "id": "price_1JTNmnBn6ujpoUXKjsMQQz9l",
                 "name": "Cherry Blossom Scarlet - Hot Pink",
                 "liningName": "Hot Pink",
                 "image": "/images/masks/cherryBlossomScarletBlushHotPink.jpeg",
@@ -80,7 +80,7 @@
                 "price": 8.00
             },
             {
-                "id": "price_1JTBZMBn6ujpoUXKXdnEir9D",
+                "id": "price_1JTNmvBn6ujpoUXKUEgRr3iX",
                 "name": "Cherry Blossom Scarlet - Navy",
                 "liningName": "Navy",
                 "image": "/images/masks/cherryBlossomScarletBlushNavy.jpeg",
@@ -94,7 +94,7 @@
         "groupId": "cherry-blossom-blush",
         "variants": [
             {
-                "id": "price_1JQX0nBn6ujpoUXKL9DQksso",
+                "id": "price_1JTNlGBn6ujpoUXKDoew7vKr",
                 "name": "Cherry Blossom Blush - Original",
                 "liningName": "Original",
                 "image": "/images/masks/cherryBlossomBlushOriginal.jpeg",
@@ -102,7 +102,7 @@
                 "price": 8.00
             },
             {
-                "id": "price_1JQX19Bn6ujpoUXKZFne9UBy",
+                "id": "price_1JTNlPBn6ujpoUXKWnUM2Jin",
                 "name": "Cherry Blossom Blush - Maroon",
                 "liningName": "Maroon",
                 "image": "/images/masks/cherryBlossomBlushMaroon.jpeg",
@@ -130,7 +130,7 @@
         "groupId": "daisy",
         "variants": [
             {
-                "id": "price_1JTBgXBn6ujpoUXK94KxskLY",
+                "id": "price_1JTNnhBn6ujpoUXKnOpzrXoM",
                 "name": "Daisy",
                 "liningName": "Original",
                 "image": "/images/masks/daisy.jpeg",
@@ -144,7 +144,7 @@
         "groupId": "alaska",
         "variants": [
             {
-                "id": "price_1JTBiQBn6ujpoUXKPYbG63l0",
+                "id": "price_1JTNnoBn6ujpoUXKHF3U4GRI",
                 "name": "Alaska",
                 "liningName": "Original",
                 "image": "/images/masks/alaska.jpeg",
@@ -158,7 +158,7 @@
         "groupId": "seville",
         "variants": [
             {
-                "id": "price_1JTBjxBn6ujpoUXKpvkg7jZZ",
+                "id": "price_1JTNnuBn6ujpoUXKl2vmFIUL",
                 "name": "Seville",
                 "liningName": "Original",
                 "image": "/images/masks/seville.jpeg",
@@ -172,7 +172,7 @@
         "groupId": "feather",
         "variants": [
             {
-                "id": "price_1JTBmCBn6ujpoUXKKVSUsFFh",
+                "id": "price_1JTNo3Bn6ujpoUXKVQZK5kCN",
                 "name": "Feather - Original",
                 "liningName": "Original",
                 "image": "/images/masks/feather.jpeg",
@@ -180,7 +180,7 @@
                 "price": 8.00
             },
             {
-                "id": "price_1JTBmzBn6ujpoUXKgQiNUzZL",
+                "id": "price_1JTNoJBn6ujpoUXK92pEf248",
                 "name": "Feather - Blue",
                 "liningName": "Original",
                 "image": "/images/masks/featherBlue.jpeg",
