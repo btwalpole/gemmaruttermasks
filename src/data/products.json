@@ -38,7 +38,7 @@
                 "name": "Monet - Original",
                 "liningName": "Original",
                 "image": "/images/masks/monet.jpeg",
-                "color": "rgb(211, 196, 182)",
+                "color": "#2e394d",
                 "price": 8.00
             },
             {
@@ -46,7 +46,7 @@
                 "name": "Monet - Purple",
                 "liningName": "Purple",
                 "image": "/images/masks/monetPurple.jpeg",
-                "color": "rgb(185, 108, 122)",
+                "color": "#b38ada",
                 "price": 8.00
             }
         ]
@@ -75,7 +75,7 @@
                 "id": "price_1JTNmnBn6ujpoUXKjsMQQz9l",
                 "name": "Cherry Blossom Scarlet - Hot Pink",
                 "liningName": "Hot Pink",
-                "image": "/images/masks/cherryBlossomScarletBlushHotPink.jpeg",
+                "image": "/images/masks/cherryBlossomScarletHotPink.jpeg",
                 "color": "#f73873",
                 "price": 8.00
             },
@@ -83,7 +83,7 @@
                 "id": "price_1JTNmvBn6ujpoUXKUEgRr3iX",
                 "name": "Cherry Blossom Scarlet - Navy",
                 "liningName": "Navy",
-                "image": "/images/masks/cherryBlossomScarletBlushNavy.jpeg",
+                "image": "/images/masks/cherryBlossomScarletNavy.jpeg",
                 "color": "#3f496d",
                 "price": 8.00
             }
@@ -106,7 +106,7 @@
                 "name": "Cherry Blossom Blush - Maroon",
                 "liningName": "Maroon",
                 "image": "/images/masks/cherryBlossomBlushMaroon.jpeg",
-                "color": "rgb(185, 108, 122)",
+                "color": "#5d121f",
                 "price": 8.00
             }
         ]
@@ -120,7 +120,7 @@
                 "name": "Calypso",
                 "liningName": "Original",
                 "image": "/images/masks/calypso.jpeg",
-                "color": "rgb(185, 108, 122)",
+                "color": "#1871c4",
                 "price": 8.00
             }    
         ]
@@ -134,7 +134,7 @@
                 "name": "Daisy",
                 "liningName": "Original",
                 "image": "/images/masks/daisy.jpeg",
-                "color": "rgb(185, 108, 122)",
+                "color": "#1c2029",
                 "price": 8.00
             }    
         ]
@@ -148,7 +148,7 @@
                 "name": "Alaska",
                 "liningName": "Original",
                 "image": "/images/masks/alaska.jpeg",
-                "color": "rgb(185, 108, 122)",
+                "color": "#1a2134",
                 "price": 8.00
             }    
         ]
@@ -162,7 +162,7 @@
                 "name": "Seville",
                 "liningName": "Original",
                 "image": "/images/masks/seville.jpeg",
-                "color": "rgb(185, 108, 122)",
+                "color": "#1e293e",
                 "price": 8.00
             }    
         ]
@@ -176,7 +176,7 @@
                 "name": "Feather - Original",
                 "liningName": "Original",
                 "image": "/images/masks/feather.jpeg",
-                "color": "rgb(185, 108, 122)",
+                "color": "#9cb0d2",
                 "price": 8.00
             },
             {
@@ -184,7 +184,7 @@
                 "name": "Feather - Blue",
                 "liningName": "Original",
                 "image": "/images/masks/featherBlue.jpeg",
-                "color": "rgb(185, 108, 122)",
+                "color": "#191f2f",
                 "price": 8.00
             }      
         ]
@@ -198,7 +198,7 @@
                 "name": "Rose - Original",
                 "liningName": "Original",
                 "image": "/images/masks/rose.jpeg",
-                "color": "rgb(185, 108, 122)",
+                "color": "#d42a57",
                 "price": 8.00
             },
             {
@@ -206,7 +206,7 @@
                 "name": "Rose - Pink",
                 "liningName": "Pink",
                 "image": "/images/masks/rosePink.jpeg",
-                "color": "rgb(185, 108, 122)",
+                "color": "#ee9eb9",
                 "price": 8.00
             }
         ]
