@@ -7,7 +7,7 @@ export default async function handler(req, res) {
       console.log("request body ", req.body);
       const session = await stripe.checkout.sessions.create({
         line_items: JSON.parse(req.body),
-        shipping_rates: ["shr_1JS0MIBn6ujpoUXKEDHuEEkk"],
+        shipping_rates: ["shr_1JTRbHBn6ujpoUXKB5mNFKJ5"],
         shipping_address_collection: {
           allowed_countries: ["GB"],
         },
@@ -16,10 +16,10 @@ export default async function handler(req, res) {
         success_url: `${req.headers.origin}/?success=true&session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${req.headers.origin}/?canceled=true`,
       });
-      console.log('session: ', session)      
-      res.status(200).json(session)
+      console.log("session: ", session);
+      res.status(200).json(session);
     } catch (err) {
-      console.log('errored')
+      console.log("errored");
       res.status(err.statusCode || 500).json(err.message);
     }
   } else {
