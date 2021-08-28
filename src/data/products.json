@@ -181,12 +181,34 @@
             },
             {
                 "id": "price_1JTBmzBn6ujpoUXKgQiNUzZL",
-                "name": "Feather - Original",
+                "name": "Feather - Blue",
                 "liningName": "Original",
                 "image": "/images/masks/featherBlue.jpeg",
                 "color": "rgb(185, 108, 122)",
                 "price": 8.00
             }      
+        ]
+    },
+    {
+        "groupTitle": "Rose",
+        "groupId": "rose",
+        "variants": [
+            {
+                "id": "price_1JTNt3Bn6ujpoUXKm99SJQqY",
+                "name": "Rose - Original",
+                "liningName": "Original",
+                "image": "/images/masks/rose.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00
+            },
+            {
+                "id": "price_1JTNtkBn6ujpoUXKu9Gr9jei",
+                "name": "Rose - Pink",
+                "liningName": "Pink",
+                "image": "/images/masks/rosePink.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00
+            }
         ]
     }
 ]
