@@ -210,5 +210,99 @@
                 "price": 8.00
             }
         ]
+    },
+    {
+        "groupTitle": "Gecko",
+        "groupId": "gecko",
+        "variants": [
+            {
+                "id": "price_1JTmHdBn6ujpoUXK2KUvcqip",
+                "name": "Gecko",
+                "liningName": "Original",
+                "image": "/images/masks/gecko.jpeg",
+                "color": "#648b56",
+                "price": 8.00
+            }
+        ]
+    },
+    {
+        "groupTitle": "Autumn",
+        "groupId": "autumn",
+        "variants": [
+            {
+                "id": "price_1JToq3Bn6ujpoUXK3LFoyDid",
+                "name": "Autumn - Original",
+                "liningName": "Original",
+                "image": "/images/masks/autumn.jpeg",
+                "color": "#5a1a2a",
+                "price": 8.00
+            },
+            {
+                "id": "price_1JTosJBn6ujpoUXK9Uuh1Y3y",
+                "name": "Autumn - Purple",
+                "liningName": "Purple",
+                "image": "/images/masks/autumnPurple.jpeg",
+                "color": "#775a9d",
+                "price": 8.00
+            }
+        ]
+    },
+    {
+        "groupTitle": "Jane",
+        "groupId": "jane",
+        "variants": [
+            {
+                "id": "price_1JTox1Bn6ujpoUXKqQ7lofeD",
+                "name": "Jane",
+                "liningName": "Original",
+                "image": "/images/masks/jane.jpeg",
+                "color": "#f57d34",
+                "price": 8.00
+            }
+        ]
+    },
+    {
+        "groupTitle": "Ariel Aqua",
+        "groupId": "ariel-aqua",
+        "variants": [
+            {
+                "id": "price_1JTpADBn6ujpoUXKDJvgGtwr",
+                "name": "Ariel Aqua - Original",
+                "liningName": "Original",
+                "image": "/images/masks/arielAqua.jpeg",
+                "color": "#0a4c65",
+                "price": 8.00
+            },
+            {
+                "id": "price_1JTpAoBn6ujpoUXKJ8Op6vkP",
+                "name": "Ariel Aqua - Orange",
+                "liningName": "Orange",
+                "image": "/images/masks/arielAquaOrange.jpeg",
+                "color": "#f16f21",
+                "price": 8.00
+            },
+            {
+                "id": "price_1JTpBRBn6ujpoUXKq2FJ4HV2",
+                "name": "Ariel Aqua - Yellow",
+                "liningName": "Yellow",
+                "image": "/images/masks/arielAquaYellow.jpeg",
+                "color": "#efb820",
+                "price": 8.00
+            }
+        ]
+    },
+    {
+        "groupTitle": "Golden Hour",
+        "groupId": "golden-hour",
+        "variants": [
+            {
+                "id": "price_1JTpEvBn6ujpoUXKx2xD1gdx",
+                "name": "Golden Hour",
+                "liningName": "Original",
+                "image": "/images/masks/goldenHour.jpeg",
+                "color": "#f5ca93",
+                "price": 8.00
+            }
+        ]
     }
 ]
