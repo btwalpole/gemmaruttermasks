@@ -304,5 +304,71 @@
                 "price": 8.00
             }
         ]
+    },
+    {
+        "groupTitle": "Powerpuff",
+        "groupId": "powerpuff",
+        "variants": [
+            {
+                "id": "price_1JTrEBBn6ujpoUXKVWnAS9GP",
+                "name": "Powerpuff - Beige",
+                "liningName": "Beige",
+                "image": "/images/masks/powerpuffBeige.jpeg",
+                "color": "#af9b82",
+                "price": 8.00
+            },
+            {
+                "id": "price_1JTrEiBn6ujpoUXKI8A1FSob",
+                "name": "Powerpuff - Blue",
+                "liningName": "Blue",
+                "image": "/images/masks/powerpuffBlue.jpeg",
+                "color": "#004e6c",
+                "price": 8.00
+            },
+            {
+                "id": "price_1JTrFIBn6ujpoUXKme72UjCS",
+                "name": "Powerpuff - Pink",
+                "liningName": "Pink",
+                "image": "/images/masks/powerpuffPink.jpeg",
+                "color": "#e189a7",
+                "price": 8.00
+            },
+            {
+                "id": "price_1JTrFkBn6ujpoUXK2J20ekgO",
+                "name": "Powerpuff - Purple",
+                "liningName": "Purple",
+                "image": "/images/masks/powerpuffPurple.jpeg",
+                "color": "#a180d1",
+                "price": 8.00
+            }
+        ]
+    },
+    {
+        "groupTitle": "Dragon",
+        "groupId": "dragon",
+        "variants": [
+            {
+                "id": "price_1JTrKvBn6ujpoUXKacNTJRAI",
+                "name": "Dragon",
+                "liningName": "Original",
+                "image": "/images/masks/dragon.jpeg",
+                "color": "#d66c69",
+                "price": 8.00
+            }
+        ]
+    },
+    {
+        "groupTitle": "Wildflower",
+        "groupId": "wildflower",
+        "variants": [
+            {
+                "id": "price_1JTrNnBn6ujpoUXKxsI3js4I",
+                "name": "Wildflower",
+                "liningName": "Original",
+                "image": "/images/masks/wildflower.jpeg",
+                "color": "#324160",
+                "price": 8.00
+            }
+        ]
     }
 ]
