@@ -1,6 +1,6 @@
 .button {
     display: flex;
-    border: 2px solid rgb(240, 240, 240);
+    border: 2px solid var(--color-text);
     padding: 0px 5px;
     font-family: inherit;
     font-weight: normal;
@@ -8,7 +8,7 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    background-color: rgb(240, 240, 240);
+    background-color: var(--color-text);
     color: rgb(49, 49, 49);
 
     &:focus,
@@ -16,7 +16,7 @@
     &:visited,
     &:link,
     &:active {
-        border: 2px solid rgb(255, 102, 0);
+        border: 2px solid var(--color-highlight);
     }
 
     transition: border 250ms ease-in-out, transform 150ms ease;

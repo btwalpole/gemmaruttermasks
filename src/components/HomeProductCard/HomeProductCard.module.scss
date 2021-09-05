@@ -4,7 +4,7 @@
 
 
 .product:hover {
-    color: rgb(255, 102, 0);
+    color: var(--color-highlight);
   }
   
   .productTitle {
@@ -20,8 +20,7 @@
   .arrow {
     position: absolute;
     font-size: 1.3em;
-    --fa-primary-color: rgb(1, 0, 41);
-    color: var(--fa-primary-color);
+    color: var(--color-background);
     transition: color 250ms;
   
     @media only screen and (max-width: 600px) {
@@ -30,7 +29,7 @@
   }
   
   .arrow:hover {
-    color:rgb(255, 102, 0);
+    color: var(--color-highlight);
   }
 
   .right {
