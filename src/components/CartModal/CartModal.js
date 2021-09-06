@@ -1,20 +1,35 @@
 import { FaTimes } from "react-icons/fa";
 import { useCart } from "@hooks/use-cart";
+import { useState } from 'react';
 import Button from "@components/Button";
 import Image from "next/image";
 import styles from "./CartModal.module.scss";
 
 export default function CartModal() {
+  const [isLoading, setIsLoading] = useState(false);
+
   let {
     active,
     toggleModal,
     subTotal,
-    totalItems,
-    checkout,
     checkoutAPI,
     cartItems,
     removeFromCart,
   } = useCart();
+
+  function handleCheckout() {
+    if(subTotal > 0) {
+      checkoutAPI();
+      console.log('handling checkout')
+      setIsLoading(true);
+    }
+  }
+
+  const spinLogo = (
+    <div className={styles.spinLogo}>
+      <Image src="/images/logo.png" alt="logo" width={215} height={213} />    
+    </div>
+  )
 
   return (
     <div className={styles.modalWrapper} active={active} id="modal">
@@ -24,8 +39,8 @@ export default function CartModal() {
         </Button>
       </div>
       <h1>Cart: £{subTotal}</h1>
-      <Button onClick={checkoutAPI} className={styles.checkout}>
-        Checkout
+      <Button onClick={handleCheckout} className={styles.checkout}>
+        {isLoading ? spinLogo : 'Checkout'}
       </Button>
       {cartItems.map((product) => {
         let { id, name, image, quantity } = product;
