@@ -1,0 +1,12 @@
+.trackWrapper {
+    position: absolute;
+    display: flex;
+    bottom: 1%;
+    border: 2px solid red;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    color: var(--color-background)
+    //margin: 0 auto;
+  }
