@@ -38,6 +38,7 @@ function HomeProductCard({ product }) {
               height="3024"
               src={variants[imgIndex].image}
               alt={`Card of ${groupTitle}`}
+              priority={true}
             />
             {product.variants.length > 1 && (
               <>
