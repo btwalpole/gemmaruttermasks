@@ -84,6 +84,8 @@
 
 .checkout {
   display: flex;
+  width: 200px;
+  height: 50px;
   background: rgb(131,58,180);
   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 52%, rgba(252,176,69,1) 100%);
   &:focus,
@@ -97,4 +99,20 @@
   transition: background 350ms ease-in-out, transform 350ms ease;
   color: inherit;
   font-size: 2em;
+}
+
+.spinLogo {
+  display: flex;
+  width: 1.2em;
+  object-fit: cover;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
