@@ -1,3 +1,4 @@
+import { RiCheckboxBlankCircleFill, RiCheckboxBlankCircleLine } from "react-icons/ri";
 import styles from "./CurrentImgTrackers.module.scss";
 
 function CurrentImgTrackers({product, imgIndex}) {
@@ -5,9 +6,9 @@ function CurrentImgTrackers({product, imgIndex}) {
         <div className={styles.trackWrapper}>
             {product.variants.map((item, index) => {
                 if(imgIndex === index) {
-                    return (<p>O</p>)
+                    return (<RiCheckboxBlankCircleFill key={index}/>)
                 }
-                return (<p>o</p>)
+                return (<RiCheckboxBlankCircleLine key={index}/>)
             })}
         </div>
     )   
