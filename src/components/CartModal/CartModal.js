@@ -1,4 +1,5 @@
 import { FaTimes } from "react-icons/fa";
+import { ImBin } from "react-icons/im";
 import { useCart } from "@hooks/use-cart";
 import { useState } from 'react';
 import Button from "@components/Button";
@@ -20,7 +21,6 @@ export default function CartModal() {
   function handleCheckout() {
     if(subTotal > 0) {
       checkoutAPI();
-      console.log('handling checkout')
       setIsLoading(true);
     }
   }
@@ -46,20 +46,21 @@ export default function CartModal() {
         let { id, name, image, quantity } = product;
         return (
           <div key={id} className={styles.modalItem}>
-            <h3 className={styles.productName}>{name}</h3>
-            <div className={styles.imageButtonWrapper}>
+            <div className={styles.productWrapper}>
               <Button
                 onClick={() => removeFromCart(id)}
                 className={styles.removeButton}
               >
-                <FaTimes />
+                <ImBin />
               </Button>
-              <div className={styles.productImage}>
-                <Image src={image} width={1024} height={768} alt={name} />
+              <div className={styles.imgQtyWrapper}>
+                <h2 className={styles.productName}>{name}</h2>
+                <div className={styles.productImage}>
+                  <Image src={image} width={1024} height={768} alt={name} />
+                </div>
+                <h3 className={styles.quantity}>Quantity: {quantity}</h3>
               </div>
             </div>
-
-            <h3>Quantity: {quantity}</h3>
           </div>
         );
       })}
