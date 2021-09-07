@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CurrentImgTrackers from "@components/CurrentImgTrackers";
 import { useState } from "react";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
 import styles from "./HomeProductCard.module.scss";
@@ -53,6 +54,9 @@ function HomeProductCard({ product }) {
                   onClick={(e) => showLeftImg(e, groupId)}
                 />
               </>
+            )}
+            {product.variants.length > 1 && (
+              <CurrentImgTrackers product={product} imgIndex={imgIndex} />
             )}
           </div>
           <h3 className={styles.productTitle}>{groupTitle}</h3>
