@@ -110,20 +110,6 @@ export function useCartState() {
     });
   }
 
-  console.log("cart contents: ");
-  console.log(cart);
-
-  function checkout() {
-    initiateCheckout({
-      lineItems: cartItems.map((item) => {
-        return {
-          price: item.id,
-          quantity: item.quantity,
-        };
-      }),
-    });
-  }
-
   async function checkoutAPI() {    
     const response = await fetch("/api/checkoutSessions", {
       method: "POST",
@@ -148,12 +134,10 @@ export function useCartState() {
     cart,
     subTotal,
     totalItems,
-    cartItems,
     addToCart,
     removeFromCart,
     toggleModal,
     cartModal,
-    checkout,
     checkoutAPI,
     lineItems,
   };
