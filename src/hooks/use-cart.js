@@ -74,17 +74,18 @@ export function useCartState() {
 
   function removeFromCart(id) {
     updateCart(prev => {
-      //find index of product to be deleted
-      let indexToRemove = prev.findIndex(product => product.id === id);
-      console.log('indexToRemove', indexToRemove)
-
       //clone prev state
       let prevArrayClone = [...prev];
       console.log('prevarrayclone', prevArrayClone);
 
+      //find index of product to be deleted
+      let indexToRemove = prevArrayClone.findIndex(product => product.id === id);
+      console.log('indexToRemove', indexToRemove)
+
       //use splice to return new array without that index
-      let updatedCartArray = prevArrayClone.splice(indexToRemove, 1,);
-      return updatedCartArray;
+      prevArrayClone.splice(indexToRemove, 1);
+      console.log('updatedCartArray', prevArrayClone);
+      return prevArrayClone;
     });
   }
 
