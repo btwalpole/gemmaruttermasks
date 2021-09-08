@@ -52,9 +52,6 @@ export default function Home() {
       setModalActive(true);
     }
     if (query.get("canceled")) {
-      console.log(
-        "Order canceled -- continue to shop around and checkout when you’re ready."
-      );
       setModalText(
         "Order canceled -- continue to shop around and checkout when you’re ready."
       );
