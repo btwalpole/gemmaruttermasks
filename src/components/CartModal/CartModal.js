@@ -14,7 +14,7 @@ export default function CartModal() {
     toggleModal,
     subTotal,
     checkoutAPI,
-    cartItems,
+    cart,
     removeFromCart,
   } = useCart();
 
@@ -42,7 +42,7 @@ export default function CartModal() {
       <Button onClick={handleCheckout} className={styles.checkout}>
         {isLoading ? spinLogo : 'Checkout'}
       </Button>
-      {cartItems.map((product) => {
+      {cart.map((product) => {
         let { id, name, image, quantity } = product;
         return (
           <div key={id} className={styles.modalItem}>

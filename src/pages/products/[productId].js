@@ -98,7 +98,7 @@ export default function Product({ product }) {
             <div className={styles.addToCartButtonWrapper}>
               <Button
                 className={styles.addToCartButton}
-                onClick={() => addToCart({ id, quantity })}
+                onClick={() => addToCart(variant, quantity)}
               >
                 Add To Cart
               </Button>
