@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <img width="40" src="https://github.com/btwalpole/gemmaruttermasks/blob/dev/public/images/logo.png?raw=true" alt="mask logo" /> Gemma Rutter Masks - A Next.js + Stripe Online Store 
 
-## Getting Started
+**Live at :point_right: <a href="https://gemmarutter.com/" target="_blank" rel="noopener noreferrer">gemmarutter.com</a>**
 
-First, run the development server:
+## Overview
+During the pandemic, my girlfriend started making hand made masks and scrunchies to sell to friends. I decided this was the perfect opportunity for my first major web project! I could provide her a platform for her products as well as improving my front end dev skills.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The website provides a hompage, individual product pages and a modal for the shopping cart - this is all written in [Next.JS](https://nextjs.org/), bootstrapped with `create-next-app`.
+ 
+I wrote a short Next.JS API route to call the Stripe API which handles payments. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<p align="left">
+  <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+    <img height="50" src="./public/nextjs-logotype-light.svg?raw=true" alt="Next.JS Logo" />
+  </a>
+  <a href="https://www.stripe.com" target="_blank" rel="noopener noreferrer">
+    <img width="100" src="./public/stripe.svg?raw=true" alt="stripe logo" />
+  </a>
+  <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
+    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+  </a>
+</p>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+I chose Next.JS for the front end to utilise it's pre-rendering of HTML for performance, and for it's improved SEO over a plain react app. 
 
-## Learn More
+I chose Stripe to handle payments as it's o widely used and well documented. It's not as easy to work with as for example, Snipcart, but it's significantly cheaper for a small store. Snipcart also takes care of all the cart logic for you and for the purposes of improving my React skills I wanted to write this aspect myself.
 
-To learn more about Next.js, take a look at the following resources:
+Stripe also does automated email receipts for customers and notifies me of a purchase.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I deployed to Netlify as it seems to be a popular service for JAMStack apps.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Challenges Faced & Lessons Learned
 
-## Deploy on Vercel
+* Cart Logic - use the React Context API
+* Stripe integration - made a NextJS API route with an async function. 
+* Management of products in json file. Had to rethink the structure of the objects in there to best account for each product having multiple lining styles.
+* Global styles - learned to use css variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How to Install Your Project & Use it ??
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Future Features
+
+* Add testing - in particular for the cart functionality and for the integration Stripe.
+* Use a CMS to manage products, e.g. Strapi, WP with WPGraphQL
+* Authentication & Login to save favourites and see past orders
+* Set up a CI/CD pipeline with Docker and Travis CI or similar.
+* Improve accessibility
+* Save the cart contents to localStorage.
+* Optimise SEO
+* Use more advanced parts of the Stripe API, e.g. Payment Intents with Webhooks
+* Make use of https://useshoppingcart.com/ to simplify the Stripe integratino
+* Add a dark mode. Some excellent ideas here for Gatsby which should be applicable to Next.JS https://www.joshwcomeau.com/react/dark-mode/

@@ -1,20 +1,13 @@
 import { useState, createContext, useContext } from "react";
-import { initiateCheckout } from "@lib/payments";
-import products from "@data/products.json";
 import getStripe from '../lib/get-stripe';
-
-const defaultCart = {
-  products: {}, //easier to icompare one object to another than with arrays
-};
 
 export const CartContext = createContext();
 
 export function useCartState() {
-  const [cart, updateCart] = useState(defaultCart);
+  const [cart, updateCart] = useState([]);
   const [cartModal, setCartModal] = useState(false);
 
   function toggleModal() {
-    console.log("toggling modal");
     if (cartModal) {
       closeCartModal();
     } else {
@@ -33,64 +26,43 @@ export function useCartState() {
     document.getElementById("modal").style.right = "-300px";
   }
 
-  //create array from current cart state, map over it and return
-  //each item and it's price (taken from the products.json)
-
-  const cartItems = Object.keys(cart.products).map((key) => {
-    let product = undefined;
-    for (let prodGroup of products) {
-      product = prodGroup.variants.find(({ id }) => `${id}` === `${key}`);
-      if (product) {
-        break;
-      }
-    }
-
-    return {
-      ...cart.products[key],
-      name: product.name,
-      image: product.image,
-      pricePerItem: product.price,
-    };
-  });
-
-  console.log("cart items ", cartItems);
-
-  const subTotal = cartItems.reduce(
-    (accumulator, { pricePerItem, quantity }) => {
-      return accumulator + pricePerItem * quantity;
+  const subTotal = cart.reduce(
+    (accumulator, { price, quantity }) => {
+      return accumulator + price * quantity;
     },
     0
   );
 
-  const totalItems = cartItems.reduce((accumulator, { quantity }) => {
-    return accumulator + quantity;
-  }, 0);
-
-  const lineItems = cartItems.map((item) => {
+  const lineItems = cart.map((item) => {
     return {
       price: item.id,
       quantity: item.quantity,
     };
   });
 
-  function addToCart({ id, quantity } = {}) {
+  function addToCart(variant, quantity) {
     updateCart((prev) => {
-      //deep clone of prev state
-      let cartState = JSON.parse(JSON.stringify(prev));
-
-      console.log("prev Cart State ", cartState);
-
-      if (cartState.products[id]) {
-        cartState.products[id].quantity =
-          cartState.products[id].quantity + quantity;
+      //bit of annoying duplication here
+      if(prev.find(product => product.id === variant.id)) {
+        console.log(`${variant.id} found in cart, updating quantity`);
+        let updatedCart = prev.map(product => {
+          if (product.id === variant.id) {
+            return {...product, quantity: product.quantity + quantity}
+          } else {
+            return product;
+          }
+        })
+        return updatedCart;
       } else {
-        cartState.products[id] = {
-          id,
-          quantity,
-        };
+        console.log(`${variant.id} not found in cart, now adding`);
+        return [...prev, {
+          id: variant.id,
+          name: variant.name,
+          image: variant.image,
+          price: variant.price,
+          quantity
+        }]
       }
-
-      return cartState;
     });
 
     if (!cartModal) {
@@ -99,44 +71,26 @@ export function useCartState() {
   }
 
   function removeFromCart(id) {
-    console.log("removing product: " + id);
-    updateCart((prev) => {
-      let cartState = JSON.parse(JSON.stringify(prev));
-      if (cartState.products[id]) {
-        delete cartState.products[id];
-        console.log("deleting ", id);
-      }
-      return cartState;
+    updateCart(prev => {
+      //clone prev state
+      let prevArrayClone = [...prev];
+
+      //find index of product to be deleted
+      let indexToRemove = prevArrayClone.findIndex(product => product.id === id);
+
+      //use splice to return new array without that index
+      prevArrayClone.splice(indexToRemove, 1);
+      return prevArrayClone;
     });
   }
 
-  console.log("cart contents: ");
-  console.log(cart);
-
-  function checkout() {
-    initiateCheckout({
-      lineItems: cartItems.map((item) => {
-        return {
-          price: item.id,
-          quantity: item.quantity,
-        };
-      }),
-    });
-  }
-
-  async function checkoutAPI() {
-    console.log("line iitems json ", JSON.stringify(lineItems));
-    
+  async function checkout() {    
     const response = await fetch("/api/checkoutSessions", {
       method: "POST",
       body: JSON.stringify(lineItems),
     });
     const data = await response.json();
     const stripe = await getStripe();
-    console.log('response : ', response)
-    console.log('data : ', data)
-    console.log('response id: ', response.id)
-    console.log('data id: ', data.id)
     const { error } = await stripe.redirectToCheckout({
       // Make the id field from the Checkout Session creation API response
       // available to this file, so you can provide it as parameter here
@@ -153,14 +107,11 @@ export function useCartState() {
   return {
     cart,
     subTotal,
-    totalItems,
-    cartItems,
     addToCart,
     removeFromCart,
     toggleModal,
     cartModal,
     checkout,
-    checkoutAPI,
     lineItems,
   };
 }
