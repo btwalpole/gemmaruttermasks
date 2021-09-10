@@ -1,11 +1,12 @@
 # Gemma Rutter Masks - A Next.js + Stripe Online Store
 
-https://gemmarutter.com
+Live at :point_right: https://gemmarutter.com
 
-![mask-logo](https://github.com/btwalpole/gemmaruttermasks/blob/dev/public/images/logo.png?raw=true)
+<p align="center">
+  <img width="100" src="https://github.com/btwalpole/gemmaruttermasks/blob/dev/public/images/logo.png?raw=true" alt="stripe logo>
+</p>
 
 ## Overview
-
 During the pandemic, my girlfriend started making hand made masks and scrunchies to sell to friends. I decided this was the perfect opportunity for my first major web project! I could provide her a platform for her products as well as improving my front end dev skills.
 
 The website provides a hompage, individual product pages and a modal for the shopping cart - this is all written in [Next.JS](https://nextjs.org/), bootstrapped with `create-next-app`.
@@ -14,7 +15,9 @@ I wrote a short Next.JS API route to call the Stripe API which handles payments.
 
 ## Tech Stack
 
-![stripe-logo](https://github.com/btwalpole/gemmaruttermasks/blob/dev/public/stripe.png?raw=true)
+<p align="center">
+  <img width="100" src="https://github.com/btwalpole/gemmaruttermasks/blob/dev/public/stripe.png?raw=true" alt="stripe logo>
+</p>
 
 I chose Next.JS to utilise it's pre-rendering of HTML for performance, and improved SEO over a plain react app. 
 
