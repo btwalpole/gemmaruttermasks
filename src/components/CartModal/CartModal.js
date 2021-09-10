@@ -13,14 +13,14 @@ export default function CartModal() {
     active,
     toggleModal,
     subTotal,
-    checkoutAPI,
-    cartItems,
+    checkout,
+    cart,
     removeFromCart,
   } = useCart();
 
   function handleCheckout() {
     if(subTotal > 0) {
-      checkoutAPI();
+      checkout();
       setIsLoading(true);
     }
   }
@@ -42,7 +42,7 @@ export default function CartModal() {
       <Button onClick={handleCheckout} className={styles.checkout}>
         {isLoading ? spinLogo : 'Checkout'}
       </Button>
-      {cartItems.map((product) => {
+      {cart.map((product) => {
         let { id, name, image, quantity } = product;
         return (
           <div key={id} className={styles.modalItem}>

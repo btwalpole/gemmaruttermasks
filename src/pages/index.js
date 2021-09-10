@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Container from "@components/Container";
 import AfterOrderModal from "@components/AfterOrderModal";
 import HomeProductCard  from "@components/HomeProductCard";
 import useViewport from "@hooks/Viewport";
@@ -47,7 +46,6 @@ export default function Home() {
     // Check to see if this is a redirect back from Checkout
     const query = new URLSearchParams(window.location.search);
     if (query.get("success")) {
-      console.log("Order placed! You will receive an email confirmation.");
       setModalText("Order placed! You will receive an email confirmation.");
       setModalActive(true);
     }
@@ -74,8 +72,7 @@ export default function Home() {
           <AfterOrderModal closeModal={closeModal}>{modalText}</AfterOrderModal>
         )}
 
-        <main>
-          <Container>
+        <main className={styles.container}>
             <div className={styles.headingWrapper}>
               <h1 className={styles.heading}>
                 Handmade Masks &amp; Scrunchies
@@ -93,7 +90,6 @@ export default function Home() {
                 return (<HomeProductCard key={product.groupId} product={product} />)
               })}
             </ul>
-          </Container>
         </main>
       </div>
     </>
