@@ -1,6 +1,6 @@
 # <img width="40" src="https://github.com/btwalpole/gemmaruttermasks/blob/dev/public/images/logo.png?raw=true" alt="mask logo" /> Gemma Rutter Masks - A Next.js + Stripe Online Store 
 
-## Live at :point_right: https://gemmarutter.com
+**Live at :point_right: https://gemmarutter.com**
 
 ## Overview
 During the pandemic, my girlfriend started making hand made masks and scrunchies to sell to friends. I decided this was the perfect opportunity for my first major web project! I could provide her a platform for her products as well as improving my front end dev skills.
@@ -13,14 +13,13 @@ I wrote a short Next.JS API route to call the Stripe API which handles payments.
 
 <p align="left">
   <a href="https://nextjs.org/">
-    <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.JS Logo" />
+    <img height="50" src="./public/nextjs-logotype-light.svg?raw=true" alt="Next.JS Logo" />
   </a>
-  <img width="100" src="https://github.com/btwalpole/gemmaruttermasks/blob/dev/public/stripe.png?raw=true" alt="stripe logo" />
+  <img width="100" src="./public/stripe.svg?raw=true" alt="stripe logo" />
   <a href="https://www.netlify.com">
     <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
   </a>
 </p>
-
 
 
 I chose Next.JS to utilise it's pre-rendering of HTML for performance, and improved SEO over a plain react app. 
