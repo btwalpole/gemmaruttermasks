@@ -1,10 +1,10 @@
-#Gemma Rutter Masks - A Next.js + Stripe Online Store
+# Gemma Rutter Masks - A Next.js + Stripe Online Store
 
 https://gemmarutter.com
 
-![mask-logo](https://github.com/btwalpole/gemmaruttermasks/blob/main/public/images/logo.png?raw=true)
+![mask-logo](https://github.com/btwalpole/gemmaruttermasks/blob/dev/public/images/logo.png?raw=true)
 
-##Overview
+## Overview
 
 During the pandemic, my girlfriend started making hand made masks and scrunchies to sell to friends. I decided this was the perfect opportunity for my first major web project! I could provide her a platform for her products as well as improving my front end dev skills.
 
@@ -12,9 +12,9 @@ The website provides a hompage, individual product pages and a modal for the sho
  
 I wrote a short Next.JS API route to call the Stripe API which handles payments. 
 
-##Tech Stack
+## Tech Stack
 
-![stripe-logo](https://github.com/btwalpole/gemmaruttermasks/blob/main/public/stripe.png?raw=true)
+![stripe-logo](https://github.com/btwalpole/gemmaruttermasks/blob/dev/public/stripe.png?raw=true)
 
 I chose Next.JS to utilise it's pre-rendering of HTML for performance, and improved SEO over a plain react app. 
 
@@ -25,11 +25,11 @@ Stripe also takes care of automated email receipts for customers and to notify m
 I deployed to Netlify as it seems to be a popular service for JAMStack apps.
 
 
-##Challenges Faced & Lessons Learned
+## Challenges Faced & Lessons Learned
 
-##How to Install Your Project & Use it ??
+## How to Install Your Project & Use it ??
 
-##Future Features
+## Future Features
 
 * Add testing - in particular for the cart functionality and for the integration Stripe.
 * Use a CMS to manage products, e.g. Strapi, WP with WPGraphQL
