@@ -50,12 +50,12 @@ function Footer() {
           />
         </a>
       </div>
-      <p className={`${styles.copyrightText} ${styles.p}`}>
+      <div className={`${styles.copyrightText} ${styles.p}`}>
         <p className={`${styles.copyrightLogo} ${styles.p}`}>&#xa9;</p>
         <p className={styles.p}>
           Gemma Rutter Masks, {new Date().getFullYear()}
         </p>
-      </p>
+      </div>
     </footer>
   );
 }
