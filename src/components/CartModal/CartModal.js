@@ -13,14 +13,14 @@ export default function CartModal() {
     active,
     toggleModal,
     subTotal,
-    checkoutAPI,
+    checkout,
     cart,
     removeFromCart,
   } = useCart();
 
   function handleCheckout() {
     if(subTotal > 0) {
-      checkoutAPI();
+      checkout();
       setIsLoading(true);
     }
   }

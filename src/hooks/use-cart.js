@@ -42,8 +42,6 @@ export function useCartState() {
 
   function addToCart(variant, quantity) {
     updateCart((prev) => {
-      console.log('cart', cart);
-
       //bit of annoying duplication here
       if(prev.find(product => product.id === variant.id)) {
         console.log(`${variant.id} found in cart, updating quantity`);
@@ -76,20 +74,17 @@ export function useCartState() {
     updateCart(prev => {
       //clone prev state
       let prevArrayClone = [...prev];
-      console.log('prevarrayclone', prevArrayClone);
 
       //find index of product to be deleted
       let indexToRemove = prevArrayClone.findIndex(product => product.id === id);
-      console.log('indexToRemove', indexToRemove)
 
       //use splice to return new array without that index
       prevArrayClone.splice(indexToRemove, 1);
-      console.log('updatedCartArray', prevArrayClone);
       return prevArrayClone;
     });
   }
 
-  async function checkoutAPI() {    
+  async function checkout() {    
     const response = await fetch("/api/checkoutSessions", {
       method: "POST",
       body: JSON.stringify(lineItems),
@@ -116,7 +111,7 @@ export function useCartState() {
     removeFromCart,
     toggleModal,
     cartModal,
-    checkoutAPI,
+    checkout,
     lineItems,
   };
 }
