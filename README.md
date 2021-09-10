@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#Gemma Rutter Masks - A Next.js + Stripe Online Store# 
 
-## Getting Started
+https://gemmarutter.com
 
-First, run the development server:
+![mask-logo](https://github.com/btwalpole/gemmaruttermasks/blob/main/public/images/logo.png?raw=true)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+##Overview##
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+During the pandemic, my girlfriend started making hand made masks and scrunchies to sell to friends. I decided this was the perfect opportunity for my first major web project! I could provide her a platform for her products as well as improving my front end dev skills.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The website provides a hompage, individual product pages and a modal for the shopping cart - this is all written in [Next.JS](https://nextjs.org/), bootstrapped with `create-next-app`.
+ 
+I wrote a short Next.JS API route to call the Stripe API which handles payments. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+##Tech Stack##
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![stripe-logo](https://github.com/btwalpole/gemmaruttermasks/blob/main/public/stripe.png?raw=true)
 
-## Learn More
+I chose Next.JS to utilise it's pre-rendering of HTML for performance, and improved SEO over a plain react app. 
 
-To learn more about Next.js, take a look at the following resources:
+I chose Stripe as it's such a widely used payments API. It's not as easy to work with as for example, Snipcart, but it's significantly cheaper for a small store. Snipcart also takes care of all the cart logic for you, and for the purposes of improving my React skills I wanted to write this myself.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Stripe also takes care of automated email receipts for customers and to notify me of a purchase. It also has a nice dashboard to manage products.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I deployed to Netlify as it seems to be a popular service for JAMStack apps.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##Challenges Faced & Lessons Learned##
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+##How to Install Your Project & Use it ??##
+
+##Future Features##
+
+* Add testing - in particular for the cart functionality and for the integration Stripe.
+* Use a CMS to manage products, e.g. Strapi, WP with WPGraphQL
+* Authentication & Login to save favourites and see past orders
+* Set up a CI/CD pipeline with Docker and Travis CI or similar.
+* Improve accessibility
+* Save the cart contents to localStorage.
+* Optimise SEO
+* Use more advanced parts of the Stripe API, e.g. Payment Intents with Webhooks
+* Make use of https://useshoppingcart.com/ to simplify the Stripe integratino
+* Add a dark mode. Some excellent ideas here for Gatsby which should be applicable to Next.JS https://www.joshwcomeau.com/react/dark-mode/
