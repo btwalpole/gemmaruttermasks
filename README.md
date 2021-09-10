@@ -12,13 +12,13 @@ I wrote a short Next.JS API route to call the Stripe API which handles payments.
 ## Tech Stack
 
 <p align="left">
-  <a href="https://nextjs.org/">
+  <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
     <img height="50" src="./public/nextjs-logotype-light.svg?raw=true" alt="Next.JS Logo" />
   </a>
-  <a href="https://www.stripe.com">
+  <a href="https://www.stripe.com" target="_blank" rel="noopener noreferrer">
     <img width="100" src="./public/stripe.svg?raw=true" alt="stripe logo" />
   </a>
-  <a href="https://www.netlify.com">
+  <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
     <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
   </a>
 </p>
