@@ -1,6 +1,6 @@
 # <img width="40" src="https://github.com/btwalpole/gemmaruttermasks/blob/dev/public/images/logo.png?raw=true" alt="mask logo" /> Gemma Rutter Masks - A Next.js + Stripe Online Store 
 
-**Live at :point_right: https://gemmarutter.com**
+**Live at :point_right: <a href="https://gemmarutter.com/" target="_blank" rel="noopener noreferrer">gemmarutter.com</a>**
 
 ## Overview
 During the pandemic, my girlfriend started making hand made masks and scrunchies to sell to friends. I decided this was the perfect opportunity for my first major web project! I could provide her a platform for her products as well as improving my front end dev skills.
