@@ -15,23 +15,29 @@ I wrote a short Next.JS API route to call the Stripe API which handles payments.
   <a href="https://nextjs.org/">
     <img height="50" src="./public/nextjs-logotype-light.svg?raw=true" alt="Next.JS Logo" />
   </a>
-  <img width="100" src="./public/stripe.svg?raw=true" alt="stripe logo" />
+  <a href="https://www.stripe.com">
+    <img width="100" src="./public/stripe.svg?raw=true" alt="stripe logo" />
+  </a>
   <a href="https://www.netlify.com">
     <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
   </a>
 </p>
 
 
-I chose Next.JS to utilise it's pre-rendering of HTML for performance, and improved SEO over a plain react app. 
+I chose Next.JS for the front end to utilise it's pre-rendering of HTML for performance, and for it's improved SEO over a plain react app. 
 
-I chose Stripe as it's such a widely used payments API. It's not as easy to work with as for example, Snipcart, but it's significantly cheaper for a small store. Snipcart also takes care of all the cart logic for you, and for the purposes of improving my React skills I wanted to write this myself.
+I chose Stripe to handle payments as it's o widely used and well documented. It's not as easy to work with as for example, Snipcart, but it's significantly cheaper for a small store. Snipcart also takes care of all the cart logic for you and for the purposes of improving my React skills I wanted to write this aspect myself.
 
-Stripe also takes care of automated email receipts for customers and to notify me of a purchase. It also has a nice dashboard to manage products.
+Stripe also does automated email receipts for customers and notifies me of a purchase.
 
 I deployed to Netlify as it seems to be a popular service for JAMStack apps.
 
-
 ## Challenges Faced & Lessons Learned
+
+* Cart Logic - use the React Context API
+* Stripe integration - made a NextJS API route with an async function. 
+* Management of products in json file. Had to rethink the structure of the objects in there to best account for each product having multiple lining styles.
+* Global styles - learned to use css variables
 
 ## How to Install Your Project & Use it ??
 
