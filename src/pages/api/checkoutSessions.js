@@ -15,10 +15,8 @@ export default async function handler(req, res) {
         success_url: `${req.headers.origin}/?success=true&session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${req.headers.origin}/?canceled=true`,
       });
-      console.log("session: ", session);
       res.status(200).json(session);
     } catch (err) {
-      console.log("errored");
       res.status(err.statusCode || 500).json(err.message);
     }
   } else {

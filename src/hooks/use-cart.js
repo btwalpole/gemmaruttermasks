@@ -101,7 +101,6 @@ export function useCartState() {
     // error, display the localized error message to your customer
     // using `error.message`.
     console.warn(error.message)
-    console.log("api req data", data);
   }
 
   return {

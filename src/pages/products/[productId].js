@@ -111,7 +111,6 @@ export default function Product({ product }) {
 }
 
 export async function getStaticProps({ params }) {
-  console.log("params", params);
   const product = products.find(({ groupId }) => groupId === params.productId);
 
   //make the product which matches the path available to the product page
