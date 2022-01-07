@@ -30,8 +30,21 @@ function HomeProductCard({ product }) {
   }
 
   const outOfStock = () => {
-    if (!variants[imgIndex].inStock) {
+    let outOfStockCount = 0;
+    console.log("hello");
+    for (let i = 0; i < variants.length; i++) {
+      console.log("is this variant in stock: ", variants[i].inStock);
+      if (variants[i].inStock === false) {
+        outOfStockCount = outOfStockCount + 1;
+      }
+    }
+
+    console.log("outOfStockCount", outOfStockCount);
+
+    if (outOfStockCount === variants.length) {
       return " - Out of stock";
+    } else {
+      return "";
     }
   };
 

@@ -61,12 +61,13 @@
   align-items: center;
   justify-content: space-around;
   width: 150px;
+  margin-right: .5em;
 }
 
-.EditQuantityButton {
+.editQuantityButton {
   height: 30px;
-  font-size: 30px;
-  margin: 0 1.5em 0 1.5em;
+  font-size: 20px;
+  margin: 0 .5em 0 .5em;
 }
 
 .addToCartButtonWrapper {
@@ -92,6 +93,6 @@
 .disabledAddToCartButton {
   display: flex;
   font-size: 1.6em;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(206, 206, 206);
   color: rgb(49, 49, 49);
 }
