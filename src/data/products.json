@@ -9,7 +9,8 @@
                 "liningName": "Beige",
                 "image": "/images/masks/afternoonTeaBeige.jpeg",
                 "color": "rgb(211, 196, 182)",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": true
             },
             {
                 "id": "price_1JTNkzBn6ujpoUXKK4vsLxhm",
@@ -17,7 +18,8 @@
                 "liningName": "Blush",
                 "image": "/images/masks/afternoonTeaBlush.jpeg",
                 "color": "rgb(185, 108, 122)",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": false
             },
             {
                 "id": "price_1JTNkqBn6ujpoUXKiYwLuwnd",
@@ -25,7 +27,8 @@
                 "liningName": "Hot Pink",
                 "image": "/images/masks/afternoonTeaHotPink.jpeg",
                 "color": "rgb(243, 58, 111)",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": true
             }
         ]
     },
@@ -39,7 +42,8 @@
                 "liningName": "Original",
                 "image": "/images/masks/monet.jpeg",
                 "color": "#2e394d",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": true
             },
             {
                 "id": "price_1JTNmABn6ujpoUXKaWdoF6uG",
@@ -47,7 +51,8 @@
                 "liningName": "Purple",
                 "image": "/images/masks/monetPurple.jpeg",
                 "color": "#b38ada",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": true
             }
         ]
     },

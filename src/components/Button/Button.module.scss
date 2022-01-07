@@ -23,3 +23,18 @@
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
+.disabled {
+    background-color: rgb(170, 170, 170);
+
+    &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+        border: 2px solid var(--color-text);
+    }
+
+    transition: none, transform none;
+    cursor: not-allowed;
+}

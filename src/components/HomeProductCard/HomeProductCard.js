@@ -29,6 +29,12 @@ function HomeProductCard({ product }) {
     }
   }
 
+  const outOfStock = () => {
+    if (!variants[imgIndex].inStock) {
+      return " - Out of stock";
+    }
+  };
+
   return (
     <li key={groupId} className={styles.product}>
       <Link href={`/products/${groupId}`}>
@@ -59,7 +65,9 @@ function HomeProductCard({ product }) {
               <CurrentImgTrackers product={product} imgIndex={imgIndex} />
             )}
           </div>
-          <h3 className={styles.productTitle}>{groupTitle}</h3>
+          <h3 className={styles.productTitle}>
+            {groupTitle} {outOfStock()}
+          </h3>
         </a>
       </Link>
     </li>
