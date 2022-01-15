@@ -1,231 +1,5 @@
 [
     {
-        "groupTitle": "Afternoon Tea",
-        "groupId": "afternoon-tea",
-        "variants": [
-            {
-                "id": "price_1JTNkXBn6ujpoUXKUeZa9jLr",
-                "name": "Afternoon Tea - Beige",
-                "liningName": "Beige",
-                "image": "/images/masks/afternoonTeaBeige.jpeg",
-                "color": "rgb(211, 196, 182)",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTNkzBn6ujpoUXKK4vsLxhm",
-                "name": "Afternoon Tea - Blush",
-                "liningName": "Blush",
-                "image": "/images/masks/afternoonTeaBlush.jpeg",
-                "color": "rgb(185, 108, 122)",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTNkqBn6ujpoUXKiYwLuwnd",
-                "name": "Afternoon Tea - Hot Pink",
-                "liningName": "Hot Pink",
-                "image": "/images/masks/afternoonTeaHotPink.jpeg",
-                "color": "rgb(243, 58, 111)",
-                "price": 8.00
-            }
-        ]
-    },
-    {
-        "groupTitle": "Monet",
-        "groupId": "monet",
-        "variants": [
-            {
-                "id": "price_1JTNluBn6ujpoUXKecNMUvXO",
-                "name": "Monet - Original",
-                "liningName": "Original",
-                "image": "/images/masks/monet.jpeg",
-                "color": "#2e394d",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTNmABn6ujpoUXKaWdoF6uG",
-                "name": "Monet - Purple",
-                "liningName": "Purple",
-                "image": "/images/masks/monetPurple.jpeg",
-                "color": "#b38ada",
-                "price": 8.00
-            }
-        ]
-    },
-    {
-        "groupTitle": "Cherry Blossom Scarlet",
-        "groupId": "Cherry Blossom Scarlet",
-        "variants": [
-            {
-                "id": "price_1JTNmQBn6ujpoUXKebn9fzH4",
-                "name": "Cherry Blossom Scarlet - Original",
-                "liningName": "Original",
-                "image": "/images/masks/cherryBlossomScarlet.jpeg",
-                "color": "#e31c21",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTNmZBn6ujpoUXKq483NQOs",
-                "name": "Cherry Blossom Scarlet - Blush",
-                "liningName": "Blush",
-                "image": "/images/masks/cherryBlossomScarletBlush.jpeg",
-                "color": "#b26974",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTNmnBn6ujpoUXKjsMQQz9l",
-                "name": "Cherry Blossom Scarlet - Hot Pink",
-                "liningName": "Hot Pink",
-                "image": "/images/masks/cherryBlossomScarletHotPink.jpeg",
-                "color": "#f73873",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTNmvBn6ujpoUXKUEgRr3iX",
-                "name": "Cherry Blossom Scarlet - Navy",
-                "liningName": "Navy",
-                "image": "/images/masks/cherryBlossomScarletNavy.jpeg",
-                "color": "#3f496d",
-                "price": 8.00
-            }
-        ]
-    },
-    {
-        "groupTitle": "Cherry Blossom Blush",
-        "groupId": "cherry-blossom-blush",
-        "variants": [
-            {
-                "id": "price_1JTNlGBn6ujpoUXKDoew7vKr",
-                "name": "Cherry Blossom Blush - Original",
-                "liningName": "Original",
-                "image": "/images/masks/cherryBlossomBlushOriginal.jpeg",
-                "color": "rgb(185, 108, 122)",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTNlPBn6ujpoUXKWnUM2Jin",
-                "name": "Cherry Blossom Blush - Maroon",
-                "liningName": "Maroon",
-                "image": "/images/masks/cherryBlossomBlushMaroon.jpeg",
-                "color": "#5d121f",
-                "price": 8.00
-            }
-        ]
-    },
-    {
-        "groupTitle": "Calypso",
-        "groupId": "calypso",
-        "variants": [
-            {
-                "id": "price_1JQWzMBn6ujpoUXKK2YyM8Ok",
-                "name": "Calypso",
-                "liningName": "Original",
-                "image": "/images/masks/calypso.jpeg",
-                "color": "#1871c4",
-                "price": 8.00
-            }    
-        ]
-    },
-    {
-        "groupTitle": "Daisy",
-        "groupId": "daisy",
-        "variants": [
-            {
-                "id": "price_1JTNnhBn6ujpoUXKnOpzrXoM",
-                "name": "Daisy",
-                "liningName": "Original",
-                "image": "/images/masks/daisy.jpeg",
-                "color": "#1c2029",
-                "price": 8.00
-            }    
-        ]
-    },
-    {
-        "groupTitle": "Alaska",
-        "groupId": "alaska",
-        "variants": [
-            {
-                "id": "price_1JTNnoBn6ujpoUXKHF3U4GRI",
-                "name": "Alaska",
-                "liningName": "Original",
-                "image": "/images/masks/alaska.jpeg",
-                "color": "#1a2134",
-                "price": 8.00
-            }    
-        ]
-    },
-    {
-        "groupTitle": "Seville",
-        "groupId": "seville",
-        "variants": [
-            {
-                "id": "price_1JTNnuBn6ujpoUXKl2vmFIUL",
-                "name": "Seville",
-                "liningName": "Original",
-                "image": "/images/masks/seville.jpeg",
-                "color": "#1e293e",
-                "price": 8.00
-            }    
-        ]
-    },
-    {
-        "groupTitle": "Feather",
-        "groupId": "feather",
-        "variants": [
-            {
-                "id": "price_1JTNo3Bn6ujpoUXKVQZK5kCN",
-                "name": "Feather - Original",
-                "liningName": "Original",
-                "image": "/images/masks/feather.jpeg",
-                "color": "#9cb0d2",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTNoJBn6ujpoUXK92pEf248",
-                "name": "Feather - Blue",
-                "liningName": "Original",
-                "image": "/images/masks/featherBlue.jpeg",
-                "color": "#191f2f",
-                "price": 8.00
-            }      
-        ]
-    },
-    {
-        "groupTitle": "Rose",
-        "groupId": "rose",
-        "variants": [
-            {
-                "id": "price_1JTNt3Bn6ujpoUXKm99SJQqY",
-                "name": "Rose - Original",
-                "liningName": "Original",
-                "image": "/images/masks/rose.jpeg",
-                "color": "#d42a57",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTNtkBn6ujpoUXKu9Gr9jei",
-                "name": "Rose - Pink",
-                "liningName": "Pink",
-                "image": "/images/masks/rosePink.jpeg",
-                "color": "#ee9eb9",
-                "price": 8.00
-            }
-        ]
-    },
-    {
-        "groupTitle": "Gecko",
-        "groupId": "gecko",
-        "variants": [
-            {
-                "id": "price_1JTmHdBn6ujpoUXK2KUvcqip",
-                "name": "Gecko",
-                "liningName": "Original",
-                "image": "/images/masks/gecko.jpeg",
-                "color": "#648b56",
-                "price": 8.00
-            }
-        ]
-    },
-    {
         "groupTitle": "Autumn",
         "groupId": "autumn",
         "variants": [
@@ -235,7 +9,8 @@
                 "liningName": "Original",
                 "image": "/images/masks/autumn.jpeg",
                 "color": "#5a1a2a",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": true
             },
             {
                 "id": "price_1JTosJBn6ujpoUXK9Uuh1Y3y",
@@ -243,65 +18,8 @@
                 "liningName": "Purple",
                 "image": "/images/masks/autumnPurple.jpeg",
                 "color": "#775a9d",
-                "price": 8.00
-            }
-        ]
-    },
-    {
-        "groupTitle": "Jane",
-        "groupId": "jane",
-        "variants": [
-            {
-                "id": "price_1JTox1Bn6ujpoUXKqQ7lofeD",
-                "name": "Jane",
-                "liningName": "Original",
-                "image": "/images/masks/jane.jpeg",
-                "color": "#f57d34",
-                "price": 8.00
-            }
-        ]
-    },
-    {
-        "groupTitle": "Ariel Aqua",
-        "groupId": "ariel-aqua",
-        "variants": [
-            {
-                "id": "price_1JTpADBn6ujpoUXKDJvgGtwr",
-                "name": "Ariel Aqua - Original",
-                "liningName": "Original",
-                "image": "/images/masks/arielAqua.jpeg",
-                "color": "#0a4c65",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTpAoBn6ujpoUXKJ8Op6vkP",
-                "name": "Ariel Aqua - Orange",
-                "liningName": "Orange",
-                "image": "/images/masks/arielAquaOrange.jpeg",
-                "color": "#f16f21",
-                "price": 8.00
-            },
-            {
-                "id": "price_1JTpBRBn6ujpoUXKq2FJ4HV2",
-                "name": "Ariel Aqua - Yellow",
-                "liningName": "Yellow",
-                "image": "/images/masks/arielAquaYellow.jpeg",
-                "color": "#efb820",
-                "price": 8.00
-            }
-        ]
-    },
-    {
-        "groupTitle": "Golden Hour",
-        "groupId": "golden-hour",
-        "variants": [
-            {
-                "id": "price_1JTpEvBn6ujpoUXKx2xD1gdx",
-                "name": "Golden Hour",
-                "liningName": "Original",
-                "image": "/images/masks/goldenHour.jpeg",
-                "color": "#f5ca93",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": true
             }
         ]
     },
@@ -315,7 +33,8 @@
                 "liningName": "Beige",
                 "image": "/images/masks/powerpuffBeige.jpeg",
                 "color": "#af9b82",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": false
             },
             {
                 "id": "price_1JTrEiBn6ujpoUXKI8A1FSob",
@@ -323,7 +42,8 @@
                 "liningName": "Blue",
                 "image": "/images/masks/powerpuffBlue.jpeg",
                 "color": "#004e6c",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": true
             },
             {
                 "id": "price_1JTrFIBn6ujpoUXKme72UjCS",
@@ -331,7 +51,8 @@
                 "liningName": "Pink",
                 "image": "/images/masks/powerpuffPink.jpeg",
                 "color": "#e189a7",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": true
             },
             {
                 "id": "price_1JTrFkBn6ujpoUXK2J20ekgO",
@@ -339,7 +60,392 @@
                 "liningName": "Purple",
                 "image": "/images/masks/powerpuffPurple.jpeg",
                 "color": "#a180d1",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": true
+            }
+        ]
+    },
+    {
+        "groupTitle": "Ariel Aqua",
+        "groupId": "ariel-aqua",
+        "variants": [
+            {
+                "id": "price_1JTpADBn6ujpoUXKDJvgGtwr",
+                "name": "Ariel Aqua - Original",
+                "liningName": "Original",
+                "image": "/images/masks/arielAqua.jpeg",
+                "color": "#0a4c65",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTpAoBn6ujpoUXKJ8Op6vkP",
+                "name": "Ariel Aqua - Orange",
+                "liningName": "Orange",
+                "image": "/images/masks/arielAquaOrange.jpeg",
+                "color": "#f16f21",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTpBRBn6ujpoUXKq2FJ4HV2",
+                "name": "Ariel Aqua - Yellow",
+                "liningName": "Yellow",
+                "image": "/images/masks/arielAquaYellow.jpeg",
+                "color": "#efb820",
+                "price": 8.00,
+                "inStock": true
+            }
+        ]
+    },
+    {
+        "groupTitle": "Ariel Red",
+        "groupId": "ariel-red",
+        "variants": [
+            {
+                "id": "price_1KIGA4Bn6ujpoUXKf1cJ06kw",
+                "name": "Ariel Red - Original",
+                "liningName": "Original",
+                "image": "/images/masks/arielRed1.jpeg",
+                "color": "#af9b82",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1KIGBXBn6ujpoUXKs8yWQ9fs",
+                "name": "Ariel Red - Pink",
+                "liningName": "Pink",
+                "image": "/images/masks/arielRedPink.jpeg",
+                "color": "#f73873",
+                "price": 8.00,
+                "inStock": true
+            },
+            {
+                "id": "price_1KIGC4Bn6ujpoUXKszxKouA5",
+                "name": "Ariel Red - Maroon",
+                "liningName": "Maroon",
+                "image": "/images/masks/arielRedMaroon.jpeg",
+                "color": "#5d121f",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
+        "groupTitle": "Ariel Pastel",
+        "groupId": "ariel-pastel",
+        "variants": [
+            {
+                "id": "price_1KIFSbBn6ujpoUXKxQ3aTIDJ",
+                "name": "Ariel Pastel - Original",
+                "liningName": "Original",
+                "image": "/images/masks/arielPastel.jpeg",
+                "color": "#af9b82",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1KIFU0Bn6ujpoUXK4R29JeMA",
+                "name": "Ariel Pastel - Blue",
+                "liningName": "Blue",
+                "image": "/images/masks/arielPastelBlue.jpeg",
+                "color": "#0a4c65",
+                "price": 8.00,
+                "inStock": true
+            },
+            {
+                "id": "price_1KIG6zBn6ujpoUXKfljdJi7Y",
+                "name": "Ariel Pastel - Blush",
+                "liningName": "Blush",
+                "image": "/images/masks/arielPastelBlush.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1KIG7tBn6ujpoUXKmUaJWmF1",
+                "name": "Ariel Pastel - Pink",
+                "liningName": "Pink",
+                "image": "/images/masks/arielPastelPink.jpeg",
+                "color": "#f73873",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
+        "groupTitle": "Afternoon Tea",
+        "groupId": "afternoon-tea",
+        "variants": [
+            {
+                "id": "price_1JTNkXBn6ujpoUXKUeZa9jLr",
+                "name": "Afternoon Tea - Beige",
+                "liningName": "Beige",
+                "image": "/images/masks/afternoonTeaBeige.jpeg",
+                "color": "rgb(211, 196, 182)",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTNkzBn6ujpoUXKK4vsLxhm",
+                "name": "Afternoon Tea - Blush",
+                "liningName": "Blush",
+                "image": "/images/masks/afternoonTeaBlush.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTNkqBn6ujpoUXKiYwLuwnd",
+                "name": "Afternoon Tea - Hot Pink",
+                "liningName": "Hot Pink",
+                "image": "/images/masks/afternoonTeaHotPink.jpeg",
+                "color": "rgb(243, 58, 111)",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
+        "groupTitle": "Monet",
+        "groupId": "monet",
+        "variants": [
+            {
+                "id": "price_1JTNluBn6ujpoUXKecNMUvXO",
+                "name": "Monet - Original",
+                "liningName": "Original",
+                "image": "/images/masks/monet.jpeg",
+                "color": "#2e394d",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTNmABn6ujpoUXKaWdoF6uG",
+                "name": "Monet - Purple",
+                "liningName": "Purple",
+                "image": "/images/masks/monetPurple.jpeg",
+                "color": "#b38ada",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
+        "groupTitle": "Cherry Blossom Scarlet",
+        "groupId": "Cherry Blossom Scarlet",
+        "variants": [
+            {
+                "id": "price_1JTNmQBn6ujpoUXKebn9fzH4",
+                "name": "Cherry Blossom Scarlet - Original",
+                "liningName": "Original",
+                "image": "/images/masks/cherryBlossomScarlet.jpeg",
+                "color": "#e31c21",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTNmZBn6ujpoUXKq483NQOs",
+                "name": "Cherry Blossom Scarlet - Blush",
+                "liningName": "Blush",
+                "image": "/images/masks/cherryBlossomScarletBlush.jpeg",
+                "color": "#b26974",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTNmnBn6ujpoUXKjsMQQz9l",
+                "name": "Cherry Blossom Scarlet - Hot Pink",
+                "liningName": "Hot Pink",
+                "image": "/images/masks/cherryBlossomScarletHotPink.jpeg",
+                "color": "#f73873",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTNmvBn6ujpoUXKUEgRr3iX",
+                "name": "Cherry Blossom Scarlet - Navy",
+                "liningName": "Navy",
+                "image": "/images/masks/cherryBlossomScarletNavy.jpeg",
+                "color": "#3f496d",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
+        "groupTitle": "Cherry Blossom Blush",
+        "groupId": "cherry-blossom-blush",
+        "variants": [
+            {
+                "id": "price_1JTNlGBn6ujpoUXKDoew7vKr",
+                "name": "Cherry Blossom Blush - Original",
+                "liningName": "Original",
+                "image": "/images/masks/cherryBlossomBlushOriginal.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTNlPBn6ujpoUXKWnUM2Jin",
+                "name": "Cherry Blossom Blush - Maroon",
+                "liningName": "Maroon",
+                "image": "/images/masks/cherryBlossomBlushMaroon.jpeg",
+                "color": "#5d121f",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
+        "groupTitle": "Calypso",
+        "groupId": "calypso",
+        "variants": [
+            {
+                "id": "price_1JQWzMBn6ujpoUXKK2YyM8Ok",
+                "name": "Calypso",
+                "liningName": "Original",
+                "image": "/images/masks/calypso.jpeg",
+                "color": "#1871c4",
+                "price": 8.00,
+                "inStock": false
+            }    
+        ]
+    },
+    {
+        "groupTitle": "Daisy",
+        "groupId": "daisy",
+        "variants": [
+            {
+                "id": "price_1JTNnhBn6ujpoUXKnOpzrXoM",
+                "name": "Daisy",
+                "liningName": "Original",
+                "image": "/images/masks/daisy.jpeg",
+                "color": "#1c2029",
+                "price": 8.00,
+                "inStock": false
+            }    
+        ]
+    },
+    {
+        "groupTitle": "Alaska",
+        "groupId": "alaska",
+        "variants": [
+            {
+                "id": "price_1JTNnoBn6ujpoUXKHF3U4GRI",
+                "name": "Alaska",
+                "liningName": "Original",
+                "image": "/images/masks/alaska.jpeg",
+                "color": "#1a2134",
+                "price": 8.00,
+                "inStock": false
+            }    
+        ]
+    },
+    {
+        "groupTitle": "Seville",
+        "groupId": "seville",
+        "variants": [
+            {
+                "id": "price_1JTNnuBn6ujpoUXKl2vmFIUL",
+                "name": "Seville",
+                "liningName": "Original",
+                "image": "/images/masks/seville.jpeg",
+                "color": "#1e293e",
+                "price": 8.00,
+                "inStock": false
+            }    
+        ]
+    },
+    {
+        "groupTitle": "Feather",
+        "groupId": "feather",
+        "variants": [
+            {
+                "id": "price_1JTNo3Bn6ujpoUXKVQZK5kCN",
+                "name": "Feather - Original",
+                "liningName": "Original",
+                "image": "/images/masks/feather.jpeg",
+                "color": "#9cb0d2",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTNoJBn6ujpoUXK92pEf248",
+                "name": "Feather - Blue",
+                "liningName": "Original",
+                "image": "/images/masks/featherBlue.jpeg",
+                "color": "#191f2f",
+                "price": 8.00,
+                "inStock": false
+            }      
+        ]
+    },
+    {
+        "groupTitle": "Rose",
+        "groupId": "rose",
+        "variants": [
+            {
+                "id": "price_1JTNt3Bn6ujpoUXKm99SJQqY",
+                "name": "Rose - Original",
+                "liningName": "Original",
+                "image": "/images/masks/rose.jpeg",
+                "color": "#d42a57",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1JTNtkBn6ujpoUXKu9Gr9jei",
+                "name": "Rose - Pink",
+                "liningName": "Pink",
+                "image": "/images/masks/rosePink.jpeg",
+                "color": "#ee9eb9",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
+        "groupTitle": "Gecko",
+        "groupId": "gecko",
+        "variants": [
+            {
+                "id": "price_1JTmHdBn6ujpoUXK2KUvcqip",
+                "name": "Gecko",
+                "liningName": "Original",
+                "image": "/images/masks/gecko.jpeg",
+                "color": "#648b56",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
+        "groupTitle": "Jane",
+        "groupId": "jane",
+        "variants": [
+            {
+                "id": "price_1JTox1Bn6ujpoUXKqQ7lofeD",
+                "name": "Jane",
+                "liningName": "Original",
+                "image": "/images/masks/jane.jpeg",
+                "color": "#f57d34",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
+        "groupTitle": "Golden Hour",
+        "groupId": "golden-hour",
+        "variants": [
+            {
+                "id": "price_1JTpEvBn6ujpoUXKx2xD1gdx",
+                "name": "Golden Hour",
+                "liningName": "Original",
+                "image": "/images/masks/goldenHour.jpeg",
+                "color": "#f5ca93",
+                "price": 8.00,
+                "inStock": false
             }
         ]
     },
@@ -353,7 +459,8 @@
                 "liningName": "Original",
                 "image": "/images/masks/dragon.jpeg",
                 "color": "#d66c69",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": false
             }
         ]
     },
@@ -367,7 +474,8 @@
                 "liningName": "Original",
                 "image": "/images/masks/wildflower.jpeg",
                 "color": "#324160",
-                "price": 8.00
+                "price": 8.00,
+                "inStock": false
             }
         ]
     }

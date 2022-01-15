@@ -7,10 +7,16 @@ function Button({ children, className, ...rest }) {
   if (className) {
     buttonClassName = `${buttonClassName} ${className}`;
   }
+
+  let { disabled } = rest;
+  if (disabled) {
+    buttonClassName = `${buttonClassName} ${styles.disabled}`;
+  }
+
   return (
-    <div className={buttonClassName} {...rest}>
+    <button className={buttonClassName} {...rest}>
       {children}
-    </div>
+    </button>
   );
 }
 
