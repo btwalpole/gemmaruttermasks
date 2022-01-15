@@ -29,6 +29,25 @@ function HomeProductCard({ product }) {
     }
   }
 
+  const outOfStock = () => {
+    let outOfStockCount = 0;
+    console.log("hello");
+    for (let i = 0; i < variants.length; i++) {
+      console.log("is this variant in stock: ", variants[i].inStock);
+      if (variants[i].inStock === false) {
+        outOfStockCount = outOfStockCount + 1;
+      }
+    }
+
+    console.log("outOfStockCount", outOfStockCount);
+
+    if (outOfStockCount === variants.length) {
+      return " - Out of stock";
+    } else {
+      return "";
+    }
+  };
+
   return (
     <li key={groupId} className={styles.product}>
       <Link href={`/products/${groupId}`}>
@@ -59,7 +78,9 @@ function HomeProductCard({ product }) {
               <CurrentImgTrackers product={product} imgIndex={imgIndex} />
             )}
           </div>
-          <h3 className={styles.productTitle}>{groupTitle}</h3>
+          <h3 className={styles.productTitle}>
+            {groupTitle} {outOfStock()}
+          </h3>
         </a>
       </Link>
     </li>

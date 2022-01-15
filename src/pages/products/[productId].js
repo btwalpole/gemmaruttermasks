@@ -53,7 +53,17 @@ export default function Product({ product }) {
     }
   }
 
-  let { id, image, price, liningName } = variant;
+  let { id, image, price, liningName, inStock } = variant;
+
+  const outOfStock = () => {
+    if (!inStock) {
+      return " - Out of stock";
+    }
+  };
+
+  const addToCartButtonStyles = inStock
+    ? styles.enabledAddToCartButton
+    : styles.disabledAddToCartButton;
 
   return (
     <div className={styles.container}>
@@ -64,7 +74,9 @@ export default function Product({ product }) {
 
         <div>
           <h1>{groupTitle}</h1>
-          <h2>{liningName}</h2>
+          <h2>
+            {liningName} {outOfStock()}
+          </h2>
           <div className={styles.liningButtonsWrapper}>
             {variants.map((mask) => {
               const { id, color } = mask;
@@ -97,8 +109,9 @@ export default function Product({ product }) {
             </div>
             <div className={styles.addToCartButtonWrapper}>
               <Button
-                className={styles.addToCartButton}
+                className={addToCartButtonStyles}
                 onClick={() => addToCart(variant, quantity)}
+                disabled={!inStock}
               >
                 Add To Cart
               </Button>
