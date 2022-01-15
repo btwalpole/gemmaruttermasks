@@ -12,7 +12,6 @@ function Button({ children, className, ...rest }) {
   if (disabled) {
     buttonClassName = `${buttonClassName} ${styles.disabled}`;
   }
-  console.log("is this button disabled: ", disabled);
 
   return (
     <button className={buttonClassName} {...rest}>

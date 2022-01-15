@@ -99,6 +99,81 @@
         ]
     },
     {
+        "groupTitle": "Ariel Red",
+        "groupId": "ariel-red",
+        "variants": [
+            {
+                "id": "price_1KIGA4Bn6ujpoUXKf1cJ06kw",
+                "name": "Ariel Red - Original",
+                "liningName": "Original",
+                "image": "/images/masks/arielRed1.jpeg",
+                "color": "#af9b82",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1KIGBXBn6ujpoUXKs8yWQ9fs",
+                "name": "Ariel Red - Pink",
+                "liningName": "Pink",
+                "image": "/images/masks/arielRedPink.jpeg",
+                "color": "#f73873",
+                "price": 8.00,
+                "inStock": true
+            },
+            {
+                "id": "price_1KIGC4Bn6ujpoUXKszxKouA5",
+                "name": "Ariel Red - Maroon",
+                "liningName": "Maroon",
+                "image": "/images/masks/arielRedMaroon.jpeg",
+                "color": "#5d121f",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
+        "groupTitle": "Ariel Pastel",
+        "groupId": "ariel-pastel",
+        "variants": [
+            {
+                "id": "price_1KIFSbBn6ujpoUXKxQ3aTIDJ",
+                "name": "Ariel Pastel - Original",
+                "liningName": "Original",
+                "image": "/images/masks/arielPastel.jpeg",
+                "color": "#af9b82",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1KIFU0Bn6ujpoUXK4R29JeMA",
+                "name": "Ariel Pastel - Blue",
+                "liningName": "Blue",
+                "image": "/images/masks/arielPastelBlue.jpeg",
+                "color": "#0a4c65",
+                "price": 8.00,
+                "inStock": true
+            },
+            {
+                "id": "price_1KIG6zBn6ujpoUXKfljdJi7Y",
+                "name": "Ariel Pastel - Blush",
+                "liningName": "Blush",
+                "image": "/images/masks/arielPastelBlush.jpeg",
+                "color": "rgb(185, 108, 122)",
+                "price": 8.00,
+                "inStock": false
+            },
+            {
+                "id": "price_1KIG7tBn6ujpoUXKmUaJWmF1",
+                "name": "Ariel Pastel - Pink",
+                "liningName": "Pink",
+                "image": "/images/masks/arielPastelPink.jpeg",
+                "color": "#f73873",
+                "price": 8.00,
+                "inStock": false
+            }
+        ]
+    },
+    {
         "groupTitle": "Afternoon Tea",
         "groupId": "afternoon-tea",
         "variants": [

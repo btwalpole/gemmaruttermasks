@@ -65,8 +65,6 @@ export default function Product({ product }) {
     ? styles.enabledAddToCartButton
     : styles.disabledAddToCartButton;
 
-  console.log("inStock", inStock);
-
   return (
     <div className={styles.container}>
       <main className={styles.main}>
