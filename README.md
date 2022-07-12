@@ -7,7 +7,7 @@ During the pandemic, my girlfriend started making hand made masks and scrunchies
 
 The website provides a hompage, individual product pages and a modal for the shopping cart - this is all written in [Next.JS](https://nextjs.org/), bootstrapped with `create-next-app`.
  
-I wrote a short Next.JS API route to call the Stripe API which handles payments. 
+I wrote a Next.JS API route to call the Stripe API which handles payments. 
 
 ## Tech Stack
 
@@ -26,30 +26,29 @@ I wrote a short Next.JS API route to call the Stripe API which handles payments.
 
 I chose Next.JS for the front end to utilise it's pre-rendering of HTML for performance, and for it's improved SEO over a plain react app. 
 
-I chose Stripe to handle payments as it's o widely used and well documented. It's not as easy to work with as for example, Snipcart, but it's significantly cheaper for a small store. Snipcart also takes care of all the cart logic for you and for the purposes of improving my React skills I wanted to write this aspect myself.
+I chose Stripe to handle payments as it's so widely used and well documented. It's not as easy to work with as for example, Snipcart, but it's significantly cheaper for a small store. Snipcart also takes care of all the cart logic for you and for the purposes of improving my React skills I wanted to write this aspect myself.
 
 Stripe also does automated email receipts for customers and notifies me of a purchase.
 
 I deployed to Netlify as it seems to be a popular service for JAMStack apps.
 
-## Challenges Faced & Lessons Learned
+## Learning Points
 
-* Cart Logic - use the React Context API
+* Cart Logic - use the React Context API.
 * Stripe integration - made a NextJS API route with an async function. 
 * Management of products in json file. Had to rethink the structure of the objects in there to best account for each product having multiple lining styles.
-* Global styles - learned to use css variables
-
-## How to Install Your Project & Use it ??
+* Global styles - learned to use css variables.
 
 ## Future Features
 
-* Add testing - in particular for the cart functionality and for the integration Stripe.
-* Use a CMS to manage products, e.g. Strapi, WP with WPGraphQL
-* Authentication & Login to save favourites and see past orders
+* Each lining colour should show as in stock or out of stock before you click.
+* Add testing - in particular for the cart functionality and for the integration with Stripe.
+* Use a CMS to manage products, e.g. Strapi, WP with WPGraphQL.
+* Authentication & Login to save favourites and see past orders.
 * Set up a CI/CD pipeline with Docker and Travis CI or similar.
-* Improve accessibility
+* Improve accessibility.
 * Save the cart contents to localStorage.
-* Optimise SEO
-* Use more advanced parts of the Stripe API, e.g. Payment Intents with Webhooks
-* Make use of https://useshoppingcart.com/ to simplify the Stripe integratino
+* Optimise SEO.
+* Use more advanced parts of the Stripe API, e.g. Payment Intents with Webhooks.
+* Make use of https://useshoppingcart.com/ to simplify the Stripe integration.
 * Add a dark mode. Some excellent ideas here for Gatsby which should be applicable to Next.JS https://www.joshwcomeau.com/react/dark-mode/
